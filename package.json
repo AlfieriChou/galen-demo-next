@@ -1,0 +1,23 @@
+{
+  "name": "galen-demo-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AlfieriChou/galen-demo-next",
+  "author": "AlfieriChou <alfierichou@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "@galenjs/models": "^0.7.1",
+    "@galenjs/models-rest": "^0.7.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "mysql2": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
