@@ -31,7 +31,7 @@ const bootstrap = async () => {
   })
   app.context.models = models
   
-  const router = await createRouter({ remoteMethods, prefix: 'v2' })
+  const router = await createRouter({ remoteMethods, prefix: '/v2' })
 
   app.use(koaLogger())
   app.use(koaBody({}))
