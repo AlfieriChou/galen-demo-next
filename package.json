@@ -6,11 +6,11 @@
   "author": "AlfieriChou <alfierichou@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/models": "^0.7.1",
-    "@galenjs/models-rest": "^0.7.1",
+    "@galenjs/models": "^0.7.4",
+    "@galenjs/models-rest": "^0.7.5",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
