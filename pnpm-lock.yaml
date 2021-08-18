@@ -1,8 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/models': ^0.7.6
-  '@galenjs/models-rest': ^0.7.5
+  '@galenjs/models': ^0.7.8
+  '@galenjs/models-rest': ^0.7.8
+  '@galenjs/swagger': ^0.7.1
+  expire-store: ^1.0.2
   koa: ^2.13.1
   koa-body: ^4.2.0
   koa-bodyparser: ^4.3.0
@@ -11,8 +13,10 @@ specifiers:
   nodemon: ^2.0.12
 
 dependencies:
-  '@galenjs/models': 0.7.6_mysql2@2.3.0
-  '@galenjs/models-rest': 0.7.5
+  '@galenjs/models': 0.7.8_mysql2@2.3.0
+  '@galenjs/models-rest': 0.7.8
+  '@galenjs/swagger': 0.7.1
+  expire-store: 1.0.2
   koa: 2.13.1
   koa-body: 4.2.0
   koa-bodyparser: 4.3.0
@@ -24,8 +28,8 @@ devDependencies:
 
 packages:
 
-  /@galenjs/factories/0.7.1_jsonschema@1.4.0+lodash@4.17.21:
-    resolution: {integrity: sha512-Gjkt8DwkOaVvONu/e8MB4t6c3ts36Dv2cPYjttdzKtnsm+n9w919CcpYqQsg/DqBY58O9Sh3jB9+0AQhPHuSXA==}
+  /@galenjs/factories/0.7.8_jsonschema@1.4.0+lodash@4.17.21:
+    resolution: {integrity: sha512-pUvWRc6MLxlxFVTsFk/cdsr7NCR0lQy6b7Qqk2bgDC0mGBN1oWA/47H1ydPfTu74nC3+MCHqsvPZ4ufb8UMsNg==}
     peerDependencies:
       jsonschema: ^1.4.0
       lodash: ^4.17.20
@@ -34,10 +38,10 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/models-rest/0.7.5:
-    resolution: {integrity: sha512-fxMHhOwUj7DG1gA9MfV08HUqpbHFDInJ966m/UDcOluufeXQZMKjZ76gKW4SOhbYrLQ0aLPk6ftOL9KSLNgJVQ==}
+  /@galenjs/models-rest/0.7.8:
+    resolution: {integrity: sha512-3DLF/QIh7rk0uA4J7sxX5BrP4DXUMckDS8Ck/phllVVEGPR81NZaUNeRJmXppqOmm7AEEJ8VldwAe7D7WETr0Q==}
     dependencies:
-      '@galenjs/factories': 0.7.1_jsonschema@1.4.0+lodash@4.17.21
+      '@galenjs/factories': 0.7.8_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
       koa-router: 10.0.0
       lodash: 4.17.21
@@ -45,10 +49,10 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.6_mysql2@2.3.0:
-    resolution: {integrity: sha512-+tQaGc5lQCNF7JmsYpAVWjVQ72zHQ32XGvQ8+Yl0ypCiBMVblbXdlHBDcHG+xN1a4wLhHSBN4GXg3ruDmgiB0w==}
+  /@galenjs/models/0.7.8_mysql2@2.3.0:
+    resolution: {integrity: sha512-pvgkdTDCgGseygPRYdeRA+MbY+ZvC9JmY/oNZ8RhPTE3iwfvHpiEyNC5f1FkgAPM5oup007a04F8Tmm6O/OCJg==}
     dependencies:
-      '@galenjs/factories': 0.7.1_jsonschema@1.4.0+lodash@4.17.21
+      '@galenjs/factories': 0.7.8_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0
       js-yaml: 4.1.0
       jsonschema: 1.4.0
@@ -80,6 +84,12 @@ packages:
       - tedious
     dev: false
 
+  /@galenjs/swagger/0.7.1:
+    resolution: {integrity: sha512-SdDfJdXsAv15ouCq6ku3ag//1PZ1SNwKH3r55aSTxawqUW3TBlm23PAw1EA2d/HcTdiSas+L1n0VWDJMCToe6A==}
+    dependencies:
+      lodash: 4.17.21
+    dev: false
+
   /@sindresorhus/is/0.14.0:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
@@ -95,11 +105,11 @@ packages:
   /@types/formidable/1.2.3:
     resolution: {integrity: sha512-Ibu3TyzldPvzTK1yus5+uPDwN5m6pXCcO0c0rPKA1uce5ERjqP5AX9reKEqQFVlCScqjbQgitIQEOLlb6qd7Sw==}
     dependencies:
-      '@types/node': 16.4.13
+      '@types/node': 16.6.1
     dev: false
 
-  /@types/node/16.4.13:
-    resolution: {integrity: sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg==}
+  /@types/node/16.6.1:
+    resolution: {integrity: sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==}
     dev: false
 
   /abbrev/1.1.1:
@@ -494,6 +504,10 @@ packages:
   /escape-string-regexp/1.0.5:
     resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
     engines: {node: '>=0.8.0'}
+    dev: false
+
+  /expire-store/1.0.2:
+    resolution: {integrity: sha512-9FUz35m/0y/cU8zQTbwdGPWtSC/Fj4ESdzUMl00bEufixF4ITxX59abD6LQMKmYrOmEXQJcy6em/IjCkkCckEg==}
     dev: false
 
   /fill-range/7.0.1:
@@ -1504,7 +1518,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.4.13
+      '@types/node': 16.6.1
     dev: false
 
   /wrappy/1.0.2:

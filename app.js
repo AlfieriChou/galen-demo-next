@@ -10,9 +10,15 @@ const app = new Koa()
 
 
 const bootstrap = async () => {
-  const { models, remoteMethods } = await createModels({
+  const {
+    models,
+    modelDefs,
+    jsonSchemas,
+    remoteMethods
+  } = await createModels({
     workspace: process.cwd(),
     modelDefPath: 'app/modelDef',
+    modelPath: 'app/models',
     config: {
       main: {
         dataSource: 'sequelize',
@@ -29,7 +35,12 @@ const bootstrap = async () => {
       }
     }
   })
+
+  app.modelDefs = modelDefs
+  app.jsonSchemas = jsonSchemas
+  app.remoteMethods = remoteMethods
   app.context.models = models
+  app.context.app = app
   
   const router = await createRouter({ remoteMethods, prefix: '/v2' })
 
