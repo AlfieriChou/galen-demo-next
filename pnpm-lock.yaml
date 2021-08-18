@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/models': ^0.7.4
-  '@galenjs/models-rest': ^0.7.1
+  '@galenjs/models': ^0.7.6
+  '@galenjs/models-rest': ^0.7.5
   koa: ^2.13.1
   koa-body: ^4.2.0
   koa-bodyparser: ^4.3.0
@@ -11,8 +11,8 @@ specifiers:
   nodemon: ^2.0.12
 
 dependencies:
-  '@galenjs/models': 0.7.4_mysql2@2.3.0
-  '@galenjs/models-rest': 0.7.1
+  '@galenjs/models': 0.7.6_mysql2@2.3.0
+  '@galenjs/models-rest': 0.7.5
   koa: 2.13.1
   koa-body: 4.2.0
   koa-bodyparser: 4.3.0
@@ -34,8 +34,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/models-rest/0.7.1:
-    resolution: {integrity: sha512-+VXCW8VZWqbmGbhXrj9mHlWXymnu6fXWOvpZdn/DqwgDNQRoVIYclUf6vjKW9x9uVw9hl08BCBXCH8xRncRNww==}
+  /@galenjs/models-rest/0.7.5:
+    resolution: {integrity: sha512-fxMHhOwUj7DG1gA9MfV08HUqpbHFDInJ966m/UDcOluufeXQZMKjZ76gKW4SOhbYrLQ0aLPk6ftOL9KSLNgJVQ==}
     dependencies:
       '@galenjs/factories': 0.7.1_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
@@ -45,8 +45,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.4_mysql2@2.3.0:
-    resolution: {integrity: sha512-ZCLEAWsyJZOpdPinqUc5LqXmRprDnQ4NGb2YM7jEFLZ5/0Lj1LqZ2cuAG2w5Xwg6Tn9bEsPGoaRIBvFISzi1fw==}
+  /@galenjs/models/0.7.6_mysql2@2.3.0:
+    resolution: {integrity: sha512-+tQaGc5lQCNF7JmsYpAVWjVQ72zHQ32XGvQ8+Yl0ypCiBMVblbXdlHBDcHG+xN1a4wLhHSBN4GXg3ruDmgiB0w==}
     dependencies:
       '@galenjs/factories': 0.7.1_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0

@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/models": "^0.7.4",
+    "@galenjs/models": "^0.7.6",
     "@galenjs/models-rest": "^0.7.5",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
