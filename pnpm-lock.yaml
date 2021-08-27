@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/models': ^0.7.8
+  '@galenjs/models': ^0.7.10
   '@galenjs/models-rest': ^0.7.8
   '@galenjs/swagger': ^0.7.1
   expire-store: ^1.0.2
@@ -13,7 +13,7 @@ specifiers:
   nodemon: ^2.0.12
 
 dependencies:
-  '@galenjs/models': 0.7.8_mysql2@2.3.0
+  '@galenjs/models': 0.7.10_mysql2@2.3.0
   '@galenjs/models-rest': 0.7.8
   '@galenjs/swagger': 0.7.1
   expire-store: 1.0.2
@@ -43,14 +43,14 @@ packages:
     dependencies:
       '@galenjs/factories': 0.7.8_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
-      koa-router: 10.0.0
+      koa-router: 10.1.1
       lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.8_mysql2@2.3.0:
-    resolution: {integrity: sha512-pvgkdTDCgGseygPRYdeRA+MbY+ZvC9JmY/oNZ8RhPTE3iwfvHpiEyNC5f1FkgAPM5oup007a04F8Tmm6O/OCJg==}
+  /@galenjs/models/0.7.10_mysql2@2.3.0:
+    resolution: {integrity: sha512-SJbdlyus7BhhOBRYrJ603JYV7oW0RdDTGas4/IMFM743pU/zybIvJqWdkphwX+yh6aUltTh/S5FSvX9XIPOVEw==}
     dependencies:
       '@galenjs/factories': 0.7.8_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0
@@ -105,11 +105,11 @@ packages:
   /@types/formidable/1.2.3:
     resolution: {integrity: sha512-Ibu3TyzldPvzTK1yus5+uPDwN5m6pXCcO0c0rPKA1uce5ERjqP5AX9reKEqQFVlCScqjbQgitIQEOLlb6qd7Sw==}
     dependencies:
-      '@types/node': 16.6.1
+      '@types/node': 16.7.2
     dev: false
 
-  /@types/node/16.6.1:
-    resolution: {integrity: sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==}
+  /@types/node/16.7.2:
+    resolution: {integrity: sha512-TbG4TOx9hng8FKxaVrCisdaxKxqEwJ3zwHoCWXZ0Jw6mnvTInpaB99/2Cy4+XxpXtjNv9/TgfGSvZFyfV/t8Fw==}
     dev: false
 
   /abbrev/1.1.1:
@@ -435,8 +435,8 @@ packages:
     resolution: {integrity: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=}
     dev: false
 
-  /denque/1.5.0:
-    resolution: {integrity: sha512-CYiCSgIF1p6EUByQPlGkKnP1M9g0ZV3qMIrqMqZqdwazygIA/YP2vrbcyl1h/WppKJTdl1F85cXIle+394iDAQ==}
+  /denque/1.5.1:
+    resolution: {integrity: sha512-XwE+iZ4D6ZUB7mfYRMb5wByE8L74HCn30FBN7sWnXksWc1LO1bPDl67pBR9o/kC4z/xSNAwkMYcGgqDV3BE3Hw==}
     engines: {node: '>=0.10'}
     dev: false
 
@@ -633,12 +633,12 @@ packages:
       function-bind: 1.1.1
     dev: false
 
-  /http-assert/1.4.1:
-    resolution: {integrity: sha512-rdw7q6GTlibqVVbXr0CKelfV5iY8G2HqEUkhSk297BMbSpSL8crXC+9rjKoMcZZEsksX30le6f/4ul4E28gegw==}
+  /http-assert/1.5.0:
+    resolution: {integrity: sha512-uPpH7OKX4H25hBmU6G1jWNaqJGpTXxey+YOUizJUAgu0AjLUeC8D73hTrhvDS5D+GJN1DN1+hhc/eF/wpxtp0w==}
     engines: {node: '>= 0.8'}
     dependencies:
       deep-equal: 1.0.1
-      http-errors: 1.7.3
+      http-errors: 1.8.0
     dev: false
 
   /http-cache-semantics/4.1.0:
@@ -876,8 +876,8 @@ packages:
       passthrough-counter: 1.0.0
     dev: false
 
-  /koa-router/10.0.0:
-    resolution: {integrity: sha512-gAE5J1gBQTvfR8rMMtMUkE26+1MbO3DGpGmvfmM2pR9Z7w2VIb2Ecqeal98yVO7+4ltffby7gWOzpCmdNOQe0w==}
+  /koa-router/10.1.1:
+    resolution: {integrity: sha512-z/OzxVjf5NyuNO3t9nJpx7e1oR3FSBAauiwXtMQu4ppcnuNZzTaQ4p21P8A6r2Es8uJJM339oc4oVW+qX7SqnQ==}
     engines: {node: '>= 8.0.0'}
     dependencies:
       debug: 4.3.2
@@ -905,7 +905,7 @@ packages:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       fresh: 0.5.2
-      http-assert: 1.4.1
+      http-assert: 1.5.0
       http-errors: 1.8.0
       is-generator-function: 1.0.10
       koa-compose: 4.1.0
@@ -1026,7 +1026,7 @@ packages:
     resolution: {integrity: sha512-0t5Ivps5Tdy5YHk5NdKwQhe/4Qyn2pload+S+UooDBvsqngtzujG1BaTWBihQLfeKO3t3122/GtusBtmHEHqww==}
     engines: {node: '>= 8.0'}
     dependencies:
-      denque: 1.5.0
+      denque: 1.5.1
       generate-function: 2.3.1
       iconv-lite: 0.6.3
       long: 4.0.0
@@ -1518,7 +1518,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.6.1
+      '@types/node': 16.7.2
     dev: false
 
   /wrappy/1.0.2:
