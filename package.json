@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/models": "^0.7.10",
+    "@galenjs/models": "^0.7.11",
     "@galenjs/models-rest": "^0.7.8",
     "@galenjs/swagger": "^0.7.1",
     "expire-store": "^1.0.2",
