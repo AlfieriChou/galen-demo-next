@@ -16,6 +16,9 @@ properties:
     type: string
     length: 32
     description: '昵称'
+  extra:
+    type: json
+    description: '额外信息'
   createdAt:
     type: date
     allowNull: false
