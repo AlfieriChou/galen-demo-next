@@ -24,13 +24,13 @@ module.exports = Model => {
       const { isReload } = ctx.query
       if (isReload) {
         return buildSwaggerDocs(openApiInfo, {
-          schemas: ctx.app.jsonSchemas, remoteMethods: ctx.app.remoteMethods
+          schemas: ctx.jsonSchemas, remoteMethods: ctx.remoteMethods
         })
       }
       let doc = docStore.get('openApi')
       if (typeof doc === 'undefined') {
         doc = await buildSwaggerDocs(openApiInfo, {
-          schemas: ctx.app.jsonSchemas, remoteMethods: ctx.app.remoteMethods
+          schemas: ctx.jsonSchemas, remoteMethods: ctx.remoteMethods
         })
         docStore.set('openApi', doc)
       }
