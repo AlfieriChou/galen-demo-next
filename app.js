@@ -1,31 +1,42 @@
-const Koa = require('koa')
 const koaBody = require('koa-body')
 const koaLogger = require('koa-logger')
 const bodyParser = require('koa-bodyparser')
+const Framework = require('@galenjs/framework-next')
+const compose = require('koa-compose')
 
-const createRouter = require('@galenjs/models-rest')
-
-const bindContext = require('./context')
+const config = {
+  models: {
+    main: {
+      dataSource: 'sequelize',
+      options: {
+        host: '127.0.0.1',
+        user: 'root',
+        password: 'alfieri',
+        database: 'test'
+      }
+    },
+    virtual: {
+      dataSource: 'virtual',
+      options: {}
+    }
+  },
+  plugin: {
+    mainPath: 'plugins',
+    plugins: ['doc']
+  },
+  port: 3000
+}
 
 const bootstrap = async () => {
-  await bindContext()
-
-  const app = new Koa()
-  
-  const router = await createRouter({
-    remoteMethods: app.context.remoteMethods,
-    prefix: '/v2'
-  })
-
-  app.use(koaLogger())
-  app.use(koaBody({}))
-  app.use(bodyParser())
-  app.use(router.routes())
-  app.use(router.allowedMethods())
-
-  app.listen(3000, () => {
-    console.info(`✅  The server is running at http://localhost:3000`)
-  })
+  const framework = new Framework(config)
+  await framework.init()
+  framework.app.use(compose([
+    koaLogger(),
+    koaBody({}),
+    bodyParser()
+  ]))
+  await framework.loadMiddleware()
+  await framework.start()
 }
 
 bootstrap()
