@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/framework-next": "^0.7.19",
+    "@galenjs/framework-next": "^0.7.20",
     "@galenjs/swagger": "^0.7.1",
     "expire-store": "^1.0.2",
     "koa": "^2.13.1",

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.19
+  '@galenjs/framework-next': ^0.7.20
   '@galenjs/swagger': ^0.7.1
   expire-store: ^1.0.2
   koa: ^2.13.1
@@ -12,7 +12,7 @@ specifiers:
   nodemon: ^2.0.12
 
 dependencies:
-  '@galenjs/framework-next': 0.7.19_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.20_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   expire-store: 1.0.2
   koa: 2.13.1
@@ -33,6 +33,15 @@ packages:
       read-dir-filenames: 1.0.6
     dev: false
 
+  /@galenjs/factories/0.7.14_jsonschema@1.4.0:
+    resolution: {integrity: sha512-DUWPPJErqQZIBqu3ucoU3JcHbe6zE20+hX/6ShTqf+pWo9kU/fBcH3420QhI5AoV+k1d4j260wHxFYB2TI12Hw==}
+    peerDependencies:
+      jsonschema: ^1.4.0
+      lodash: ^4.17.20
+    dependencies:
+      jsonschema: 1.4.0
+    dev: false
+
   /@galenjs/factories/0.7.14_jsonschema@1.4.0+lodash@4.17.21:
     resolution: {integrity: sha512-DUWPPJErqQZIBqu3ucoU3JcHbe6zE20+hX/6ShTqf+pWo9kU/fBcH3420QhI5AoV+k1d4j260wHxFYB2TI12Hw==}
     peerDependencies:
@@ -43,18 +52,20 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.19_mysql2@2.3.0:
-    resolution: {integrity: sha512-kowWIbbfb7D6entQdKGsJJR+5zo6PZa7eISaZuyvhnk7S/J5tZTK15UID/6xwry0h7PyxN+FPa5srD12Az9Etw==}
+  /@galenjs/framework-next/0.7.20_mysql2@2.3.0:
+    resolution: {integrity: sha512-3DrHfln2C6A6qutAGCpleCRHEmRt7haauraQn/0KSjfkTiuKGgannc3HkQR6Kntj1LPPNIoQ96mU7pmr3EzXmw==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 0.7.1
-      '@galenjs/models': 0.7.19_mysql2@2.3.0
+      '@galenjs/models': 0.7.20_mysql2@2.3.0
       '@galenjs/models-rest': 0.7.14
+      '@galenjs/redis': 0.7.14
       koa: 2.13.1
       koa-compose: 4.1.0
       read-dir-filenames: 1.0.6
     transitivePeerDependencies:
+      - lodash
       - mariadb
       - mysql2
       - pg
@@ -75,8 +86,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.19_mysql2@2.3.0:
-    resolution: {integrity: sha512-gqxh/tuubqNaDHLmQmepMsK0OipZi52MJBi8aF0e5EG4tVF4LX0FRZ0mUAIR3fKEEc2/yRLa2ni0Cl870ZiGew==}
+  /@galenjs/models/0.7.20_mysql2@2.3.0:
+    resolution: {integrity: sha512-r2MZt/6z9rKW+HUDmHzqaag68nt7vPv47hO0JR5IwZ/9nDFclaTnEXe4z6KyXF0UqFowoChbOL71+ZI4sODceA==}
     dependencies:
       '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0
@@ -93,6 +104,17 @@ packages:
       - sqlite3
       - supports-color
       - tedious
+    dev: false
+
+  /@galenjs/redis/0.7.14:
+    resolution: {integrity: sha512-f/2wmqPbpCvR0sHbwJlOs8/SeAmjXUthVMER6LKhfVWiOM1tlXnHzW65IRZ/oOoGkuMnwUROb0J2cDynwYV8tw==}
+    dependencies:
+      '@galenjs/factories': 0.7.14_jsonschema@1.4.0
+      ioredis: 4.27.9
+      jsonschema: 1.4.0
+    transitivePeerDependencies:
+      - lodash
+      - supports-color
     dev: false
 
   /@galenjs/sequelize-query-filter/0.7.1_mysql2@2.3.0:
@@ -321,6 +343,11 @@ packages:
     dependencies:
       mimic-response: 1.0.1
     dev: true
+
+  /cluster-key-slot/1.1.0:
+    resolution: {integrity: sha512-2Nii8p3RwAPiFwsnZvukotvow2rIHM+yQ6ZcBXGHdniadkYGZYiGmkHJIbZPIV9nfv7m/U1IPMVVcAhoWFeklw==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /co-body/5.2.0:
     resolution: {integrity: sha512-sX/LQ7LqUhgyaxzbe7IqwPeTr2yfpfUIQ/dgpKo6ZI4y4lpQA0YxAomWIY+7I7rHWcG02PG+OuPREzMW/5tszQ==}
@@ -751,6 +778,25 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
+  /ioredis/4.27.9:
+    resolution: {integrity: sha512-hAwrx9F+OQ0uIvaJefuS3UTqW+ByOLyLIV+j0EH8ClNVxvFyH9Vmb08hCL4yje6mDYT5zMquShhypkd50RRzkg==}
+    engines: {node: '>=6'}
+    dependencies:
+      cluster-key-slot: 1.1.0
+      debug: 4.3.2
+      denque: 1.5.1
+      lodash.defaults: 4.2.0
+      lodash.flatten: 4.4.0
+      lodash.isarguments: 3.1.0
+      p-map: 2.1.0
+      redis-commands: 1.7.0
+      redis-errors: 1.2.0
+      redis-parser: 3.0.0
+      standard-as-callback: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /is-binary-path/2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -959,6 +1005,18 @@ packages:
       package-json: 6.5.0
     dev: true
 
+  /lodash.defaults/4.2.0:
+    resolution: {integrity: sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=}
+    dev: false
+
+  /lodash.flatten/4.4.0:
+    resolution: {integrity: sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=}
+    dev: false
+
+  /lodash.isarguments/3.1.0:
+    resolution: {integrity: sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=}
+    dev: false
+
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
@@ -1143,6 +1201,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /p-map/2.1.0:
+    resolution: {integrity: sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==}
+    engines: {node: '>=6'}
+    dev: false
+
   /package-json/6.5.0:
     resolution: {integrity: sha512-k3bdm2n25tkyxcjSKzB5x8kfVxlMdgsbPr0GkZcwHsLpba6cBjqCt1KlcChKEvxHIcTB1FVMuwoijZ26xex5MQ==}
     engines: {node: '>=8'}
@@ -1235,6 +1298,22 @@ packages:
     dependencies:
       picomatch: 2.3.0
     dev: true
+
+  /redis-commands/1.7.0:
+    resolution: {integrity: sha512-nJWqw3bTFy21hX/CPKHth6sfhZbdiHP6bTawSgQBlKOVRG7EZkfHbbHwQJnrE4vsQf0CMNE+3gJ4Fmm16vdVlQ==}
+    dev: false
+
+  /redis-errors/1.2.0:
+    resolution: {integrity: sha1-62LSrbFeTq9GEMBK/hUpOEJQq60=}
+    engines: {node: '>=4'}
+    dev: false
+
+  /redis-parser/3.0.0:
+    resolution: {integrity: sha1-tm2CjNyv5rS4pCin3vTGvKwxyLQ=}
+    engines: {node: '>=4'}
+    dependencies:
+      redis-errors: 1.2.0
+    dev: false
 
   /registry-auth-token/4.2.1:
     resolution: {integrity: sha512-6gkSb4U6aWJB4SF2ZvLb76yCBjcvufXBqvvEx1HbmKPkutswjW1xNVRY0+daljIYRbogN7O0etYSlbiaEQyMyw==}
@@ -1369,6 +1448,10 @@ packages:
   /sqlstring/2.3.2:
     resolution: {integrity: sha512-vF4ZbYdKS8OnoJAWBmMxCQDkiEBkGQYU7UZPtL8flbDRSNkhaXvRJ279ZtI6M+zDaQovVU4tuRgzK5fVhvFAhg==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /standard-as-callback/2.1.0:
+    resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
     dev: false
 
   /statuses/1.5.0:
