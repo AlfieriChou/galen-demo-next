@@ -1,3 +1,5 @@
+const shortId = require('shortid')
+
 module.exports = Model => {
   return class extends Model {
     static async register (ctx) {
@@ -22,10 +24,13 @@ module.exports = Model => {
       if (!ctx.service.bcrypt.verifyPassword(user.password, password)) {
         ctx.throw(400, 'password error')
       }
+      const token = await ctx.service.jwt.createToken({ phone })
+      const sessionId = shortId.generate()
+      await ctx.redis.set('main', `loginSessionId:${sessionId}`, token, 23 * 60 * 60)
       // set token to cookie and redirect to home page
       return {
         user: this.$formatJson(user.dataValues),
-        token: ctx.service.jwt.createToken({ phone })
+        sessionId
       }
     }
   }  

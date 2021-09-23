@@ -26,6 +26,19 @@ const config = {
     mainPath: 'plugins',
     plugins: ['doc', 'base']
   },
+  redis: {
+    default: {
+      host: '127.0.0.1',
+      port: 6379,
+      password: '',
+      db: 2
+    },
+    clients: {
+      main: {
+        keyPrefix: 'main'
+      }
+    }
+  },
   port: 3000
 }
 

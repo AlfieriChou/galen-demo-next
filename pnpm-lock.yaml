@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.20
+  '@galenjs/framework-next': ^0.7.21
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -12,9 +12,10 @@ specifiers:
   koa-logger: ^3.2.1
   mysql2: ^2.3.0
   nodemon: ^2.0.12
+  shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.20_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.21_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -24,6 +25,7 @@ dependencies:
   koa-bodyparser: 4.3.0
   koa-logger: 3.2.1
   mysql2: 2.3.0
+  shortid: 2.2.16
 
 devDependencies:
   nodemon: 2.0.12
@@ -56,8 +58,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.20_mysql2@2.3.0:
-    resolution: {integrity: sha512-3DrHfln2C6A6qutAGCpleCRHEmRt7haauraQn/0KSjfkTiuKGgannc3HkQR6Kntj1LPPNIoQ96mU7pmr3EzXmw==}
+  /@galenjs/framework-next/0.7.21_mysql2@2.3.0:
+    resolution: {integrity: sha512-VWA2/FLWiWAo08UgizeijQ8hTbLTw4UwWJqQKkwzKpTMVIQ4oJ5gfZBZF8+SMIWbK6vcIS2J+c7dtv4X1GOU/w==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
@@ -1211,6 +1213,10 @@ packages:
       lru-cache: 4.1.5
     dev: false
 
+  /nanoid/2.1.11:
+    resolution: {integrity: sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==}
+    dev: false
+
   /negotiator/0.6.2:
     resolution: {integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==}
     engines: {node: '>= 0.6'}
@@ -1510,6 +1516,12 @@ packages:
 
   /setprototypeof/1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+    dev: false
+
+  /shortid/2.2.16:
+    resolution: {integrity: sha512-Ugt+GIZqvGXCIItnsL+lvFJOiN7RYqlGy7QE41O3YC1xbNSeDGIRO7xg2JJXIAj1cAGnOeC1r7/T9pgrtQbv4g==}
+    dependencies:
+      nanoid: 2.1.11
     dev: false
 
   /side-channel/1.0.4:

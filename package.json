@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/framework-next": "^0.7.20",
+    "@galenjs/framework-next": "^0.7.21",
     "@galenjs/swagger": "^0.7.1",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",
@@ -18,7 +18,8 @@
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
-    "mysql2": "^2.3.0"
+    "mysql2": "^2.3.0",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
