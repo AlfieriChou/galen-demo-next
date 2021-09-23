@@ -20,9 +20,11 @@ const config = {
       options: {}
     }
   },
+  middlewarePath: 'app/middleware',
+  servicePath: 'app/service',
   plugin: {
     mainPath: 'plugins',
-    plugins: ['doc']
+    plugins: ['doc', 'base']
   },
   port: 3000
 }
