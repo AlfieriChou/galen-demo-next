@@ -3,14 +3,14 @@ const ExpireStore = require('expire-store')
 const sessionStore = new ExpireStore(60000)
 
 module.exports = () => async (ctx, next) => {
-  if (!ctx.headers.sessionId) {
+  if (!ctx.headers.sessionid) {
     return next()
   }
-  const sessionId = ctx.headers.sessionId
-  let userInfo = sessionStore.get(sessionId)
+  const sessionid = ctx.headers.sessionid
+  let userInfo = sessionStore.get(sessionid)
   if (typeof userInfo === 'undefined') {
     try {
-      const token = await ctx.redis.get('main', `loginSessionId:${sessionId}`)
+      const token = await ctx.redis.get('main', `loginSessionId:${sessionid}`)
       if (!token) {
         ctx.throw(403, 'login expired')
       }
@@ -21,7 +21,7 @@ module.exports = () => async (ctx, next) => {
     } catch (err) {
       ctx.throw(403, 'invalid token')
     }
-    sessionStore.set(sessionId, userInfo)
+    sessionStore.set(sessionid, userInfo)
   }
   ctx.user = userInfo
   return next()
