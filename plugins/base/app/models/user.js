@@ -12,7 +12,7 @@ module.exports = Model => {
         phone,
         password: await ctx.service.bcrypt.generateHash(password)
       })
-      return this.$formatJson(data.dataValues)
+      return data.toJSON()
     }
   
     static async login (ctx) {
@@ -29,7 +29,7 @@ module.exports = Model => {
       await ctx.redis.set('main', `loginSessionId:${sessionId}`, token, 23 * 60 * 60)
       // set token to cookie and redirect to home page
       return {
-        user: this.$formatJson(user.dataValues),
+        user: user.toJSON(),
         sessionId
       }
     }
