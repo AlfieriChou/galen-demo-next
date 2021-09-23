@@ -6,10 +6,11 @@ module.exports = Model => {
       if (user) {
         ctx.throw(400, 'user is registered')
       }
-      return this.create({
+      const data  = await this.create({
         phone,
         password: await ctx.service.bcrypt.generateHash(password)
       })
+      return this.$formatJson(data.dataValues)
     }
   
     static async login (ctx) {
@@ -23,7 +24,7 @@ module.exports = Model => {
       }
       // set token to cookie and redirect to home page
       return {
-        user,
+        user: this.$formatJson(user.dataValues),
         token: ctx.service.jwt.createToken({ phone })
       }
     }

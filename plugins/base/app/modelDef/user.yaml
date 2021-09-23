@@ -10,6 +10,7 @@ properties:
   password:
     type: string
     length: 32
+    hidden: true
     description: '密码'
   nickName:
     type: string
