@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.22
+  '@galenjs/framework-next': ^0.7.23
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -15,7 +15,7 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.22_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.23_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -58,14 +58,14 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.22_mysql2@2.3.0:
-    resolution: {integrity: sha512-mvrzhasGpE4/h/rsDaL3mG/EmrVg0/5yAgsrCEEKGvGLMmO23uUkbybjmIT12bgjXCSfnZRZZo9oxkpcmxbpug==}
+  /@galenjs/framework-next/0.7.23_mysql2@2.3.0:
+    resolution: {integrity: sha512-rs8JwDdqz0bSs30OzGcygU1q3vWmCmX34a4XIrkqhucd9kyhKPGyuIXwqJrcJ1OwtLOvVQbJ9BnuS7IwxlbUtw==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 0.7.1
-      '@galenjs/models': 0.7.22_mysql2@2.3.0
-      '@galenjs/models-rest': 0.7.14
+      '@galenjs/models': 0.7.23_mysql2@2.3.0
+      '@galenjs/models-rest': 0.7.23
       '@galenjs/redis': 0.7.14
       koa: 2.13.1
       koa-compose: 4.1.0
@@ -81,8 +81,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/models-rest/0.7.14:
-    resolution: {integrity: sha512-okzrjhlawIJnYC8vkUBJB9/c0nWCsOkhYwp/yIPp15haC41cSTRPwAA9KnldoDHCrM5FEWCrqvxLm+yoJUDH+Q==}
+  /@galenjs/models-rest/0.7.23:
+    resolution: {integrity: sha512-bdeOpE9eJPANsTND1aqO/t/kyqNujN2y88Zx9K3NYVUPxMQ/DJTkqA5hyeRXll+1RSSOKrKqXCH4NBvHboHSyA==}
     dependencies:
       '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
@@ -92,8 +92,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.22_mysql2@2.3.0:
-    resolution: {integrity: sha512-RX2IA6nyQ7h5/WyS2r1CYEZ1UWtaBt5iMmQLScWCJBS09Nj3CBYPAvppFMBcu3/0Mdvsm59yxoe03047vFXwSA==}
+  /@galenjs/models/0.7.23_mysql2@2.3.0:
+    resolution: {integrity: sha512-CsDOh3AZM/tr65Y6SqeAluk/jTkVQ7SnGPR1izyr9G2LiVfzCDxgyzCuwMArImQMPyQrzfwk+yRdV9BHHJGqZg==}
     dependencies:
       '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0

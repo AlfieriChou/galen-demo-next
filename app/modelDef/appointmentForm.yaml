@@ -13,6 +13,9 @@ properties:
   imageUrl:
     type: string
     description: '手写预约单地址'
+  applyAt:
+    type: date
+    description: '申请时间'
   createdAt:
     type: date
     allowNull: false
