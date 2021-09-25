@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.24
+  '@galenjs/framework-next': ^0.7.25
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -15,7 +15,7 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.24_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.25_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -58,13 +58,13 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.24_mysql2@2.3.0:
-    resolution: {integrity: sha512-oOFKxWK3OCCvGr+uhPd1pAQMlCgJ7B+CR+XEkws8tzM0sQjJqKJ3l16B+9lNgkenbNn+z1OzhN5w/4qhT7/sPw==}
+  /@galenjs/framework-next/0.7.25_mysql2@2.3.0:
+    resolution: {integrity: sha512-28JSiIThcKbyjntI2XALEFeHszbRQre1YRLTOyqrifzFE8SNkMx8LbYYRWtYR1DCXvFHR7s2ITb+vPVPwcncpQ==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 0.7.1
-      '@galenjs/models': 0.7.24_mysql2@2.3.0
+      '@galenjs/models': 0.7.25_mysql2@2.3.0
       '@galenjs/models-rest': 0.7.23
       '@galenjs/redis': 0.7.14
       koa: 2.13.1
@@ -92,8 +92,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.24_mysql2@2.3.0:
-    resolution: {integrity: sha512-eUN5vi4AcP9w8a65TvBW5y1Y9RO+7rDPOAirNs2uD+4UzknTMeb0k+sDqVUOQIklj21NRvgWCwoYLaNBkEVGsg==}
+  /@galenjs/models/0.7.25_mysql2@2.3.0:
+    resolution: {integrity: sha512-6dU0/4GQAZYWYtObAIQM+dzQCDe/o3OV3IL45cRiKqkwY6xsqUQjD+LtHQcWcgbZYcAoTKvZvlqjtLDYl/mUJw==}
     dependencies:
       '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0
