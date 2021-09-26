@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "@galenjs/framework-next": "^0.7.26",
+    "@galenjs/framework-next": "^0.7.28",
     "@galenjs/swagger": "^0.7.1",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",
