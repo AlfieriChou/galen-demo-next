@@ -13,6 +13,7 @@
     "@galenjs/swagger": "^0.7.1",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",
+    "got": "^11.8.2",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",

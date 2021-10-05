@@ -1,5 +1,10 @@
 {
   "properties": {
+    "id": {
+      "type": "integer",
+      "autoIncrement": true,
+      "primaryKey": true
+    },
     "createdAt": {
       "type": "date",
       "allowNull": false

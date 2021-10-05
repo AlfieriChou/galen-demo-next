@@ -1,0 +1,23 @@
+description: '语音生成接口'
+dataSource: 'virtual'
+dialect: 'virtual'
+remoteMethods:
+  remoteCreate:
+    path: '/tts'
+    method: 'post'
+    tags:
+      - 'tts'
+    summary: '文字生成语音接口'
+    requestBody:
+      body:
+        text:
+          type: string
+          description: '文字'
+      required:
+        - 'text'
+    output:
+      200:
+        type: 'object'
+        result:
+          path:
+            type: string
