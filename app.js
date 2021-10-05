@@ -50,7 +50,9 @@ const bootstrap = async () => {
     koaBody({}),
     bodyParser()
   ]))
-  await framework.loadMiddleware()
+  await framework.loadMiddleware([
+    'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
+  ])
   await framework.start()
 }
 

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.26
+  '@galenjs/framework-next': ^0.7.28
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -16,7 +16,7 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.26_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.28_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -41,8 +41,8 @@ packages:
       read-dir-filenames: 1.0.6
     dev: false
 
-  /@galenjs/factories/0.7.14_jsonschema@1.4.0:
-    resolution: {integrity: sha512-DUWPPJErqQZIBqu3ucoU3JcHbe6zE20+hX/6ShTqf+pWo9kU/fBcH3420QhI5AoV+k1d4j260wHxFYB2TI12Hw==}
+  /@galenjs/factories/0.7.27_jsonschema@1.4.0:
+    resolution: {integrity: sha512-05XR60SUOVqJiGlYIT/W5ygsNXpbgZDJVPx3gBBNKiDQm8I6c2JtmBMPnYkSydM1oDFtTYJQel2ucAQjJHJIwQ==}
     peerDependencies:
       jsonschema: ^1.4.0
       lodash: ^4.17.20
@@ -50,8 +50,8 @@ packages:
       jsonschema: 1.4.0
     dev: false
 
-  /@galenjs/factories/0.7.14_jsonschema@1.4.0+lodash@4.17.21:
-    resolution: {integrity: sha512-DUWPPJErqQZIBqu3ucoU3JcHbe6zE20+hX/6ShTqf+pWo9kU/fBcH3420QhI5AoV+k1d4j260wHxFYB2TI12Hw==}
+  /@galenjs/factories/0.7.27_jsonschema@1.4.0+lodash@4.17.21:
+    resolution: {integrity: sha512-05XR60SUOVqJiGlYIT/W5ygsNXpbgZDJVPx3gBBNKiDQm8I6c2JtmBMPnYkSydM1oDFtTYJQel2ucAQjJHJIwQ==}
     peerDependencies:
       jsonschema: ^1.4.0
       lodash: ^4.17.20
@@ -60,15 +60,15 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.26_mysql2@2.3.0:
-    resolution: {integrity: sha512-gZN5RkYR68V+029tCby+mJ94XzetMyL+9hnXejIjG+j5xxAjBsrT6DHqvIrPtIDqIrtW4i4FoyBFdyuE5EOfyg==}
+  /@galenjs/framework-next/0.7.28_mysql2@2.3.0:
+    resolution: {integrity: sha512-gAlTF/1H2N1d7VNWu77XJCE4QRF3tY8bkxUYAduXJezcsMS0lC577VcpJ5RF6VnKDmujywZRVCIHylqk0eOwIg==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 0.7.1
-      '@galenjs/models': 0.7.26_mysql2@2.3.0
-      '@galenjs/models-rest': 0.7.23
-      '@galenjs/redis': 0.7.14
+      '@galenjs/models': 0.7.28_mysql2@2.3.0
+      '@galenjs/models-rest': 0.7.27
+      '@galenjs/redis': 0.7.27
       koa: 2.13.1
       koa-compose: 4.1.0
       read-dir-filenames: 1.0.6
@@ -83,10 +83,10 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/models-rest/0.7.23:
-    resolution: {integrity: sha512-bdeOpE9eJPANsTND1aqO/t/kyqNujN2y88Zx9K3NYVUPxMQ/DJTkqA5hyeRXll+1RSSOKrKqXCH4NBvHboHSyA==}
+  /@galenjs/models-rest/0.7.27:
+    resolution: {integrity: sha512-bksCCoZ4WuM4ZL9j9jNKXmFXTmQqq2mjIQxO48bnXGtNntGy5YF8+EpbMxLjcuo5T3lgVPv0G1HN2LSiTrHzpQ==}
     dependencies:
-      '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
+      '@galenjs/factories': 0.7.27_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
       koa-router: 10.1.1
       lodash: 4.17.21
@@ -94,10 +94,10 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/0.7.26_mysql2@2.3.0:
-    resolution: {integrity: sha512-iHD33Avq5vi8wBvorZlCB8SrF6PJNOAE7xJvvctJLbaIgLfhSII+AnsRmWx+bZpA7mGI16P1zLk1zZG/q1/GNQ==}
+  /@galenjs/models/0.7.28_mysql2@2.3.0:
+    resolution: {integrity: sha512-JH6xftD5GOgj9ij6ZaTXSURHdnLRGcwHWYE8Hmf324iXe9glY07xlHVUdRJXXTpKsB+TBIcO3h+bLQyAZeiZTg==}
     dependencies:
-      '@galenjs/factories': 0.7.14_jsonschema@1.4.0+lodash@4.17.21
+      '@galenjs/factories': 0.7.27_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 0.7.1_mysql2@2.3.0
       js-yaml: 4.1.0
       jsonschema: 1.4.0
@@ -114,10 +114,10 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/redis/0.7.14:
-    resolution: {integrity: sha512-f/2wmqPbpCvR0sHbwJlOs8/SeAmjXUthVMER6LKhfVWiOM1tlXnHzW65IRZ/oOoGkuMnwUROb0J2cDynwYV8tw==}
+  /@galenjs/redis/0.7.27:
+    resolution: {integrity: sha512-8YacLAl3HT+OzLf5/PsxtLuxk/tAaeLs7PM1kTRq6qbHWOEfetdD3GdCbrV4Oi3yTHvpYvMp3HRA4lPaLSgePQ==}
     dependencies:
-      '@galenjs/factories': 0.7.14_jsonschema@1.4.0
+      '@galenjs/factories': 0.7.27_jsonschema@1.4.0
       ioredis: 4.27.9
       jsonschema: 1.4.0
     transitivePeerDependencies:
@@ -201,10 +201,6 @@ packages:
 
   /@types/node/16.7.2:
     resolution: {integrity: sha512-TbG4TOx9hng8FKxaVrCisdaxKxqEwJ3zwHoCWXZ0Jw6mnvTInpaB99/2Cy4+XxpXtjNv9/TgfGSvZFyfV/t8Fw==}
-    dev: false
-
-  /@types/node/16.9.6:
-    resolution: {integrity: sha512-YHUZhBOMTM3mjFkXVcK+WwAcYmyhe1wL4lfqNtzI0b3qAy7yuSetnM7QJazgE5PFmgVTNGiLOgRFfJMqW7XpSQ==}
     dev: false
 
   /@types/responselike/1.0.0:
@@ -1856,7 +1852,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.9.6
+      '@types/node': 16.10.2
     dev: false
 
   /wrappy/1.0.2:
