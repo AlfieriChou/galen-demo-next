@@ -22,6 +22,7 @@ const config = {
   },
   middlewarePath: 'app/middleware',
   servicePath: 'app/service',
+  schedulePath: 'app/schedule',
   plugin: {
     mainPath: 'plugins',
     plugins: ['doc', 'base']

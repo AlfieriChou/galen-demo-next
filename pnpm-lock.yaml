@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.28
+  '@galenjs/framework-next': ^0.7.30
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -16,7 +16,7 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.28_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.30_mysql2@2.3.0
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -60,8 +60,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.28_mysql2@2.3.0:
-    resolution: {integrity: sha512-gAlTF/1H2N1d7VNWu77XJCE4QRF3tY8bkxUYAduXJezcsMS0lC577VcpJ5RF6VnKDmujywZRVCIHylqk0eOwIg==}
+  /@galenjs/framework-next/0.7.30_mysql2@2.3.0:
+    resolution: {integrity: sha512-P1yS/Y013OQDt9vf1zIcBQl0Ktfki92Te+09HYE8cpqit5ozoBZ/qp1Pwcu3VB4oZx7sTqBca5M3FYpRhFzj3w==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
@@ -69,6 +69,7 @@ packages:
       '@galenjs/models': 0.7.28_mysql2@2.3.0
       '@galenjs/models-rest': 0.7.27
       '@galenjs/redis': 0.7.27
+      '@galenjs/schedule': 0.7.29
       koa: 2.13.1
       koa-compose: 4.1.0
       read-dir-filenames: 1.0.6
@@ -103,7 +104,7 @@ packages:
       jsonschema: 1.4.0
       lodash: 4.17.21
       read-dir-filenames: 1.0.6
-      sequelize: 6.6.5_mysql2@2.3.0
+      sequelize: 6.7.0_mysql2@2.3.0
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -118,18 +119,25 @@ packages:
     resolution: {integrity: sha512-8YacLAl3HT+OzLf5/PsxtLuxk/tAaeLs7PM1kTRq6qbHWOEfetdD3GdCbrV4Oi3yTHvpYvMp3HRA4lPaLSgePQ==}
     dependencies:
       '@galenjs/factories': 0.7.27_jsonschema@1.4.0
-      ioredis: 4.27.9
+      ioredis: 4.27.11
       jsonschema: 1.4.0
     transitivePeerDependencies:
       - lodash
       - supports-color
     dev: false
 
+  /@galenjs/schedule/0.7.29:
+    resolution: {integrity: sha512-wAycGszUQsGa338LxxGotcQ8PmaIhlmDai/MoUPQQmyiB+94AbP/J/LacU5z9CF/OQ+tevPqnhoxcsb1i4YhGA==}
+    dependencies:
+      cron: 1.8.2
+      read-dir-filenames: 1.0.6
+    dev: false
+
   /@galenjs/sequelize-query-filter/0.7.1_mysql2@2.3.0:
     resolution: {integrity: sha512-epk1L1GRxcuKZxpdQxnWOS2RbGPPdXTlPO7kmM7L4NO4WHw95mzLWkP2uw3SiYsXdxVlLeQjh4buD4R89XMhpA==}
     dependencies:
       lodash: 4.17.21
-      sequelize: 6.6.5_mysql2@2.3.0
+      sequelize: 6.7.0_mysql2@2.3.0
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -197,6 +205,10 @@ packages:
 
   /@types/node/16.10.2:
     resolution: {integrity: sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==}
+    dev: false
+
+  /@types/node/16.10.5:
+    resolution: {integrity: sha512-9iI3OOlkyOjLQQ9s+itIJNMRepDhB/96jW3fqduJ2FTPQj1dJjw6Q3QCImF9FE1wmdBs5QSun4FjDSFS8d8JLw==}
     dev: false
 
   /@types/node/16.7.2:
@@ -501,6 +513,12 @@ packages:
 
   /copy-to/2.0.1:
     resolution: {integrity: sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=}
+    dev: false
+
+  /cron/1.8.2:
+    resolution: {integrity: sha512-Gk2c4y6xKEO8FSAUTklqtfSr7oTq0CiPQeLBG5Fl0qoXpZyMcj1SG59YL+hqq04bu6/IuEA7lMkYDAplQNKkyg==}
+    dependencies:
+      moment-timezone: 0.5.33
     dev: false
 
   /crypto-random-string/2.0.0:
@@ -888,8 +906,8 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /ioredis/4.27.9:
-    resolution: {integrity: sha512-hAwrx9F+OQ0uIvaJefuS3UTqW+ByOLyLIV+j0EH8ClNVxvFyH9Vmb08hCL4yje6mDYT5zMquShhypkd50RRzkg==}
+  /ioredis/4.27.11:
+    resolution: {integrity: sha512-qBU2uCHgRs4kJT/qzxeFhbmizmNLQ1HH59EvKt1WnzDPMjjWxZS1+W6ynXdE47TxxqNLKYemJxEXXUb7Y4JJ+w==}
     engines: {node: '>=6'}
     dependencies:
       cluster-key-slot: 1.1.0
@@ -1594,8 +1612,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /sequelize/6.6.5_mysql2@2.3.0:
-    resolution: {integrity: sha512-QyRrJrDRiwuiILqTMHUA1yWOPIL12KlfmgZ3hnzQwbMvp2vJ6fzu9bYJQB+qPMosck4mBUggY4Cjoc6Et8FBIQ==}
+  /sequelize/6.7.0_mysql2@2.3.0:
+    resolution: {integrity: sha512-OVw3psUggqQT9kYg5Z9fja/BMdBxX/Ua3Bwx2yif5g6QuYEE4UfWq5jW6LmbacGwgK6bgZs05Q2zCkJZCDFrSA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       mariadb: '*'
@@ -1852,7 +1870,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.10.2
+      '@types/node': 16.10.5
     dev: false
 
   /wrappy/1.0.2:
