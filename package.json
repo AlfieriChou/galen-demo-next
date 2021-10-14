@@ -6,10 +6,10 @@
   "author": "AlfieriChou <alfierichou@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "NODE_ENV=development nodemon --inspect app.js"
   },
   "dependencies": {
-    "@galenjs/framework-next": "^0.7.30",
+    "@galenjs/framework-next": "^0.7.31",
     "@galenjs/swagger": "^0.7.1",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",

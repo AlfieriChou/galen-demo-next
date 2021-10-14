@@ -1,7 +1,7 @@
 const koaBody = require('koa-body')
 const koaLogger = require('koa-logger')
 const bodyParser = require('koa-bodyparser')
-const Framework = require('@galenjs/framework-next')
+const BaseFramework = require('@galenjs/framework-next')
 const compose = require('koa-compose')
 
 const config = {
@@ -43,17 +43,23 @@ const config = {
   port: 3000
 }
 
+class Framework extends BaseFramework {
+  async afterInit() {
+    await super.afterInit()
+    this.app.use(compose([
+      koaLogger(),
+      koaBody({}),
+      bodyParser()
+    ]))
+    this.loadMiddleware([
+      'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
+    ])
+  }
+}
+
 const bootstrap = async () => {
   const framework = new Framework(config)
   await framework.init()
-  framework.app.use(compose([
-    koaLogger(),
-    koaBody({}),
-    bodyParser()
-  ]))
-  await framework.loadMiddleware([
-    'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
-  ])
   await framework.start()
 }
 
