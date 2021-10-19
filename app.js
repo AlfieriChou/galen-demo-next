@@ -52,7 +52,7 @@ class Framework extends BaseFramework {
       bodyParser()
     ]))
     this.loadMiddleware([
-      'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
+      'requestId', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
   }
 }
