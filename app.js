@@ -4,6 +4,8 @@ const bodyParser = require('koa-bodyparser')
 const BaseFramework = require('@galenjs/framework-next')
 const compose = require('koa-compose')
 
+const Schedule = require('@galenjs/schedule')
+
 const config = {
   models: {
     main: {
@@ -45,6 +47,11 @@ const config = {
 
 class Framework extends BaseFramework {
   async afterInit() {
+    this.schedule = new Schedule({
+      schedulePath: this.config.schedulePath,
+      workspace: process.cwd(),
+      plugin: this.config.plugin
+    })
     await super.afterInit()
     this.app.use(compose([
       koaLogger(),
@@ -54,6 +61,10 @@ class Framework extends BaseFramework {
     this.loadMiddleware([
       'requestId', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
+  }
+
+  async beforeClose () {
+    this.schedule.softExit()
   }
 }
 

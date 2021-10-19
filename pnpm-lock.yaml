@@ -1,7 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': ^0.7.31
+  '@galenjs/framework-next': ^0.7.32
+  '@galenjs/schedule': ^0.7.30
   '@galenjs/swagger': ^0.7.1
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -16,7 +17,8 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 0.7.31_mysql2@2.3.0
+  '@galenjs/framework-next': 0.7.32_mysql2@2.3.0
+  '@galenjs/schedule': 0.7.30
   '@galenjs/swagger': 0.7.1
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -60,15 +62,15 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/0.7.31_mysql2@2.3.0:
-    resolution: {integrity: sha512-5eitfgk7mYLxm7oTEiF1NTG2bZDSDKZ5ORn7zTjSolMED29EB/3jK72cbwOB6PJXpO3fHmEbFJ1T1SbDCfeWiA==}
+  /@galenjs/framework-next/0.7.32_mysql2@2.3.0:
+    resolution: {integrity: sha512-JPfnl+OiELn0IdpcEVGCvuAWZSaxRGSzOszOSfiX8GgODkeU3qh5cWpLOeQQpA9gocN4Q2Q65KaCPw+IW24H8A==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 0.7.1
       '@galenjs/models': 0.7.28_mysql2@2.3.0
       '@galenjs/models-rest': 0.7.27
-      '@galenjs/redis': 0.7.27
+      '@galenjs/redis': 0.7.32
       '@galenjs/schedule': 0.7.30
       koa: 2.13.3
       koa-compose: 4.1.0
@@ -115,8 +117,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/redis/0.7.27:
-    resolution: {integrity: sha512-8YacLAl3HT+OzLf5/PsxtLuxk/tAaeLs7PM1kTRq6qbHWOEfetdD3GdCbrV4Oi3yTHvpYvMp3HRA4lPaLSgePQ==}
+  /@galenjs/redis/0.7.32:
+    resolution: {integrity: sha512-iceigD8Q2ewf9gb4bJfirmFPAfgRFQqhuj4m79P3H6QRjFt1o6fNsO9528T7yPP1DR0u/BIIEIHGchsD5FNzEw==}
     dependencies:
       '@galenjs/factories': 0.7.27_jsonschema@1.4.0
       ioredis: 4.28.0
@@ -205,6 +207,10 @@ packages:
 
   /@types/node/16.10.9:
     resolution: {integrity: sha512-H9ReOt+yqIJPCutkTYjFjlyK6WEMQYT9hLZMlWtOjFQY2ItppsWZ6RJf8Aw+jz5qTYceuHvFgPIaKOHtLAEWBw==}
+    dev: false
+
+  /@types/node/16.11.1:
+    resolution: {integrity: sha512-PYGcJHL9mwl1Ek3PLiYgyEKtwTMmkMw4vbiyz/ps3pfdRYLVv+SN7qHVAImrjdAXxgluDEw6Ph4lyv+m9UpRmA==}
     dev: false
 
   /@types/responselike/1.0.0:
@@ -1818,7 +1824,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.10.9
+      '@types/node': 16.11.1
     dev: false
 
   /wrap-ansi/7.0.0:
