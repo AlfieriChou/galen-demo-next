@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@galenjs/framework-next': 1.0.0
+  '@galenjs/framework-next': 1.0.1
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
@@ -17,7 +17,7 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 1.0.0_mysql2@2.3.0
+  '@galenjs/framework-next': 1.0.1_mysql2@2.3.0
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -62,13 +62,13 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.0_mysql2@2.3.0:
-    resolution: {integrity: sha512-cBwsVWl9zp9+h1TgREsKjsasUnJ2BL6UY0lvOtYSvkYBBpkNep0ayUInaH2NqyUeT90KWl1LGejROJ12xDwfOQ==}
+  /@galenjs/framework-next/1.0.1_mysql2@2.3.0:
+    resolution: {integrity: sha512-A9yGDWYNlYfYbKBpGvIQdKhw+SmlinRQ0hTI4AsxAKb21zs9A+uV9f0AyRcwDdlFsp3GTWD7Wkvbomt9expZnA==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/class-loader': 1.0.0
-      '@galenjs/models': 1.0.0_mysql2@2.3.0
+      '@galenjs/models': 1.0.1_mysql2@2.3.0
       '@galenjs/models-rest': 1.0.0
       '@galenjs/redis': 1.0.0
       '@galenjs/schedule': 1.0.0
@@ -97,8 +97,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/1.0.0_mysql2@2.3.0:
-    resolution: {integrity: sha512-cxwAQYwsCeH74/bBT5BFwMamIgcKgUi/8kWsH0VxsRMlKOpwaHAFgKL1MlXKUraXzW6X+S6qzzlmw7WaGcHtyA==}
+  /@galenjs/models/1.0.1_mysql2@2.3.0:
+    resolution: {integrity: sha512-Sd1Z4460K/IuWXy11pkhbVWK6FukFlU8iwg83i+hdylddNYUrgmj4bXbbxEHS9/Rf7wu2S4GnLac7tED7+dmig==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 1.0.0_mysql2@2.3.0
@@ -106,7 +106,7 @@ packages:
       jsonschema: 1.4.0
       lodash: 4.17.21
       read-dir-filenames: 1.0.6
-      sequelize: 6.8.0_mysql2@2.3.0
+      sequelize: 6.9.0_mysql2@2.3.0
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -139,7 +139,7 @@ packages:
     resolution: {integrity: sha512-1qQEshRDcF6OV3QenkrWBR9G5qdMRcZB4QarBZohmQbG2O+7fxwS2mSY5bemErtNXwTzEg52QSmnUAPWGcypWA==}
     dependencies:
       lodash: 4.17.21
-      sequelize: 6.8.0_mysql2@2.3.0
+      sequelize: 6.9.0_mysql2@2.3.0
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -1586,8 +1586,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /sequelize/6.8.0_mysql2@2.3.0:
-    resolution: {integrity: sha512-tekqSMoEuhlXfc9f/WduQr+9CS87bPWw/GKEvd+zMlOlMVFOzNx9PecQV+McjA7OUNUa1YGyPEt+Fe8baXST5A==}
+  /sequelize/6.9.0_mysql2@2.3.0:
+    resolution: {integrity: sha512-tFROh9T9GgyY6aTV2+aGdfVNvrppuTOo1EFln9AtV8wXJTOOr7Nan7pZum5oLy87CGWl0YeHzAwg99tz04OqNA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       mariadb: '*'
@@ -1622,7 +1622,7 @@ packages:
       sequelize-pool: 6.1.0
       toposort-class: 1.0.1
       uuid: 8.3.2
-      validator: 13.6.0
+      validator: 13.7.0
       wkx: 0.5.0
     transitivePeerDependencies:
       - supports-color
@@ -1804,8 +1804,8 @@ packages:
     hasBin: true
     dev: false
 
-  /validator/13.6.0:
-    resolution: {integrity: sha512-gVgKbdbHgtxpRyR8K0O6oFZPhhB5tT1jeEHZR0Znr9Svg03U0+r9DXWMrnRAB+HtCStDQKlaIZm42tVsVjqtjg==}
+  /validator/13.7.0:
+    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
     engines: {node: '>= 0.10'}
     dev: false
 
