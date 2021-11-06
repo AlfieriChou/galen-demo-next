@@ -3,8 +3,11 @@ const koaLogger = require('koa-logger')
 const bodyParser = require('koa-bodyparser')
 const BaseFramework = require('@galenjs/framework-next')
 const compose = require('koa-compose')
+const shortId = require('shortid')
 
 const Schedule = require('@galenjs/schedule')
+const createLogger = require('@galenjs/logger')
+const als = require('@galenjs/als')
 
 const config = {
   models: {
@@ -42,10 +45,19 @@ const config = {
       }
     }
   },
-  port: 3000
+  port: 3000,
+  loggerConfig: {
+    logDir: `${process.cwd()}/logs`
+  }
 }
 
 class Framework extends BaseFramework {
+  async beforeInit() {
+    await super.beforeInit()
+    this.app.als = als
+    this.app.context.logger = createLogger(this.config.loggerConfig, this.app.als)
+  }
+
   async afterInit() {
     this.schedule = new Schedule({
       schedulePath: this.config.schedulePath,
@@ -61,6 +73,14 @@ class Framework extends BaseFramework {
     this.loadMiddleware([
       'requestId', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
+    this.app.use(async (ctx, next) => {
+      const requestId = ctx.headers['X-Request-Id'] || shortId.generate()
+      await als.run({
+        requestId
+      }, async () => {
+        await next()
+      })
+    })
   }
 
   async beforeClose () {
