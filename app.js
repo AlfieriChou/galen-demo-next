@@ -74,9 +74,10 @@ class Framework extends BaseFramework {
       'requestId', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
     this.app.use(async (ctx, next) => {
-      const requestId = ctx.headers['X-Request-Id'] || shortId.generate()
       await als.run({
-        requestId
+        requestId: ctx.headers['X-Request-Id'] || shortId.generate(),
+        method: ctx.method,
+        originalUrl: ctx.originalUrl
       }, async () => {
         await next()
       })

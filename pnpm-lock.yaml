@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@galenjs/als': ^1.0.0
   '@galenjs/framework-next': 1.0.1
-  '@galenjs/logger': ^1.0.2
+  '@galenjs/logger': ^1.0.4
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
@@ -21,7 +21,7 @@ specifiers:
 dependencies:
   '@galenjs/als': 1.0.0
   '@galenjs/framework-next': 1.0.1_mysql2@2.3.0
-  '@galenjs/logger': 1.0.2
+  '@galenjs/logger': 1.0.4
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -102,8 +102,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/logger/1.0.2:
-    resolution: {integrity: sha512-k4iZSjUfHMXPFqRmTo+W+YFPV/da9XRYePtmyWS766ONkI/8fRPrA8QYrD0ojk1QjXf+PwopfxMtKxIoXCNJGA==}
+  /@galenjs/logger/1.0.4:
+    resolution: {integrity: sha512-M2doSxyFSB6UtE2AbZtf2B250e8SaWHRrQTGbQbRcooy/ay0MLlrocX/Uu51947cIFMNnm425fj3s6m5v9J63A==}
     dependencies:
       winston: 3.3.3
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
