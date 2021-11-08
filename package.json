@@ -9,9 +9,7 @@
     "dev": "NODE_ENV=development nodemon --inspect app.js"
   },
   "dependencies": {
-    "@galenjs/als": "^1.0.0",
-    "@galenjs/framework-next": "1.0.1",
-    "@galenjs/logger": "^1.0.4",
+    "@galenjs/framework-next": "1.0.7",
     "@galenjs/schedule": "1.0.0",
     "@galenjs/swagger": "1.0.0",
     "bcryptjs": "^2.4.3",
