@@ -9,6 +9,7 @@
     "dev": "NODE_ENV=development nodemon --inspect app.js"
   },
   "dependencies": {
+    "@galenjs/factories": "^1.0.0",
     "@galenjs/framework-next": "1.0.7",
     "@galenjs/schedule": "1.0.0",
     "@galenjs/swagger": "1.0.0",

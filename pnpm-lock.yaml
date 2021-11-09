@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@galenjs/factories': ^1.0.0
   '@galenjs/framework-next': 1.0.7
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
@@ -17,7 +18,8 @@ specifiers:
   shortid: ^2.2.16
 
 dependencies:
-  '@galenjs/framework-next': 1.0.7_mysql2@2.3.2
+  '@galenjs/factories': 1.0.0
+  '@galenjs/framework-next': 1.0.7_693471849f756461a9e6feee1db84abf
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -55,6 +57,13 @@ packages:
       read-dir-filenames: 1.0.6
     dev: false
 
+  /@galenjs/factories/1.0.0:
+    resolution: {integrity: sha512-OZvMKEWRGZJNYhVuNH+BAnj6pzzinqIsLECpDlV1sahGTaLkIPou76tPDY0ifF9+zAlamCNfN9g7ehwiBX3bnw==}
+    peerDependencies:
+      jsonschema: ^1.4.0
+      lodash: ^4.17.20
+    dev: false
+
   /@galenjs/factories/1.0.0_jsonschema@1.4.0:
     resolution: {integrity: sha512-OZvMKEWRGZJNYhVuNH+BAnj6pzzinqIsLECpDlV1sahGTaLkIPou76tPDY0ifF9+zAlamCNfN9g7ehwiBX3bnw==}
     peerDependencies:
@@ -74,13 +83,14 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.7_mysql2@2.3.2:
+  /@galenjs/framework-next/1.0.7_693471849f756461a9e6feee1db84abf:
     resolution: {integrity: sha512-sTclraLbeaiTBOJy+qwp/34wZJE7h1B38VYw+mNM0XhtRL0hr13xuH5vdqdP0jvOw8VTS6u4Ydu2gj2mhOoTTQ==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/als': 1.0.0
       '@galenjs/class-loader': 1.0.0
+      '@galenjs/factories': 1.0.0
       '@galenjs/logger': 1.0.7
       '@galenjs/models': 1.0.1_mysql2@2.3.2
       '@galenjs/models-rest': 1.0.0
