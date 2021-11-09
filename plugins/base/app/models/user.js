@@ -18,7 +18,6 @@ module.exports = Model => {
     static async login (ctx) {
       const { request: { body: { phone, password } } } = ctx
       const user = await this.findOne({ where: { phone } })
-      ctx.logger.info('user: ', phone, password , JSON.stringify(user.toJSON()))
       if (!user) {
         ctx.throw(400, 'user not registered')
       }

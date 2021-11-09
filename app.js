@@ -58,12 +58,11 @@ class Framework extends BaseFramework {
     })
     await super.afterInit()
     this.app.use(compose([
-      koaLogger(),
       koaBody({}),
       bodyParser()
     ]))
     this.loadMiddleware([
-      'requestId', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
+      'requestId', 'requestLog', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
   }
 
