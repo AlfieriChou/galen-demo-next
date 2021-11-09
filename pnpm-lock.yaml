@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@galenjs/factories': ^1.0.0
-  '@galenjs/framework-next': 1.0.7
+  '@galenjs/framework-next': 1.0.8
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.0.0
-  '@galenjs/framework-next': 1.0.7_693471849f756461a9e6feee1db84abf
+  '@galenjs/framework-next': 1.0.8_693471849f756461a9e6feee1db84abf
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -64,15 +64,6 @@ packages:
       lodash: ^4.17.20
     dev: false
 
-  /@galenjs/factories/1.0.0_jsonschema@1.4.0:
-    resolution: {integrity: sha512-OZvMKEWRGZJNYhVuNH+BAnj6pzzinqIsLECpDlV1sahGTaLkIPou76tPDY0ifF9+zAlamCNfN9g7ehwiBX3bnw==}
-    peerDependencies:
-      jsonschema: ^1.4.0
-      lodash: ^4.17.20
-    dependencies:
-      jsonschema: 1.4.0
-    dev: false
-
   /@galenjs/factories/1.0.0_jsonschema@1.4.0+lodash@4.17.21:
     resolution: {integrity: sha512-OZvMKEWRGZJNYhVuNH+BAnj6pzzinqIsLECpDlV1sahGTaLkIPou76tPDY0ifF9+zAlamCNfN9g7ehwiBX3bnw==}
     peerDependencies:
@@ -83,8 +74,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.7_693471849f756461a9e6feee1db84abf:
-    resolution: {integrity: sha512-sTclraLbeaiTBOJy+qwp/34wZJE7h1B38VYw+mNM0XhtRL0hr13xuH5vdqdP0jvOw8VTS6u4Ydu2gj2mhOoTTQ==}
+  /@galenjs/framework-next/1.0.8_693471849f756461a9e6feee1db84abf:
+    resolution: {integrity: sha512-AMhQTT7ceQmeT/452mvPDMLHwHXI/H9HTFiYRhaK59/L771BCVnIVqtYk6al8jtNBWFcmHOsQm+CcgmZtnOZPA==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
@@ -92,15 +83,15 @@ packages:
       '@galenjs/class-loader': 1.0.0
       '@galenjs/factories': 1.0.0
       '@galenjs/logger': 1.0.7
-      '@galenjs/models': 1.0.1_mysql2@2.3.2
-      '@galenjs/models-rest': 1.0.0
-      '@galenjs/redis': 1.0.0
+      '@galenjs/models': 1.0.8_mysql2@2.3.2
+      '@galenjs/models-rest': 1.0.8
+      '@galenjs/redis': 1.0.0_lodash@4.17.21
       koa: 2.13.4
       koa-compose: 4.1.0
+      lodash: 4.17.21
       read-dir-filenames: 1.0.6
       shortid: 2.2.16
     transitivePeerDependencies:
-      - lodash
       - mariadb
       - mysql2
       - pg
@@ -117,8 +108,8 @@ packages:
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
     dev: false
 
-  /@galenjs/models-rest/1.0.0:
-    resolution: {integrity: sha512-f0hsdtg71KHk44k5C8gwLUEVX9j1Td0PLGgJW24GaASg6DKGu77tzgPhDUhqObjqwZuRSRIBoQaTPcn0ml79kQ==}
+  /@galenjs/models-rest/1.0.8:
+    resolution: {integrity: sha512-87pl1NomYh3pS0AIqKq7p8ZO9j8w00ibPjZ0bpw8VLrDbz9T+OPjqRdJLnBh/SQQ3+Nryex00JBdIXTb7TxCQQ==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
       jsonschema: 1.4.0
@@ -128,8 +119,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/1.0.1_mysql2@2.3.2:
-    resolution: {integrity: sha512-Sd1Z4460K/IuWXy11pkhbVWK6FukFlU8iwg83i+hdylddNYUrgmj4bXbbxEHS9/Rf7wu2S4GnLac7tED7+dmig==}
+  /@galenjs/models/1.0.8_mysql2@2.3.2:
+    resolution: {integrity: sha512-kb76rFLybcKWgF0je3shoBSbl5xaE+F4VwJqgdRJkr8adDIVu2HZeYu5eWWaRLniiAlU+e5wPlP4KTfg1Fv3aQ==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
       '@galenjs/sequelize-query-filter': 1.0.0_mysql2@2.3.2
@@ -148,10 +139,10 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/redis/1.0.0:
+  /@galenjs/redis/1.0.0_lodash@4.17.21:
     resolution: {integrity: sha512-Xe93Rj+ArSatV/Ub6cjFoExt1NNwo/rFfQbioc2eGXsbuz5QcZFCGvgiuSSfrpjHu+EyIl1gtSVEvnWYpDUwgQ==}
     dependencies:
-      '@galenjs/factories': 1.0.0_jsonschema@1.4.0
+      '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
       ioredis: 4.28.0
       jsonschema: 1.4.0
     transitivePeerDependencies:
@@ -238,6 +229,10 @@ packages:
 
   /@types/node/16.11.6:
     resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
+    dev: false
+
+  /@types/node/16.11.7:
+    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
     dev: false
 
   /@types/responselike/1.0.0:
@@ -2033,7 +2028,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
     dev: false
 
   /wrap-ansi/7.0.0:
