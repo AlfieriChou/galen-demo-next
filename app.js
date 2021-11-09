@@ -27,7 +27,7 @@ const config = {
   schedulePath: 'app/schedule',
   plugin: {
     mainPath: 'plugins',
-    plugins: ['doc', 'base', 'crypto']
+    plugins: ['doc', 'base']
   },
   redis: {
     default: {
@@ -62,7 +62,7 @@ class Framework extends BaseFramework {
       bodyParser()
     ]))
     this.loadMiddleware([
-      'requestId', 'requestLog', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router', 'decryptedData'
+      'requestId', 'requestLog', 'errorHandler', 'cors', 'jwtVerify', 'auth', 'router'
     ])
   }
 

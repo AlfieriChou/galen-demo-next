@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@galenjs/factories': ^1.0.0
-  '@galenjs/framework-next': 1.0.8
+  '@galenjs/framework-next': 1.0.11
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.0.0
-  '@galenjs/framework-next': 1.0.8_693471849f756461a9e6feee1db84abf
+  '@galenjs/framework-next': 1.0.11_693471849f756461a9e6feee1db84abf
   '@galenjs/schedule': 1.0.0
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -74,8 +74,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.8_693471849f756461a9e6feee1db84abf:
-    resolution: {integrity: sha512-AMhQTT7ceQmeT/452mvPDMLHwHXI/H9HTFiYRhaK59/L771BCVnIVqtYk6al8jtNBWFcmHOsQm+CcgmZtnOZPA==}
+  /@galenjs/framework-next/1.0.11_693471849f756461a9e6feee1db84abf:
+    resolution: {integrity: sha512-p16YasgWf/GgtFrvFoYzG1zaD+CY+/l6+BAxOdxe1/3LEiwReLX2146MmuGeJV6tKKD7xcmFoxnmnkijcEfArw==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
@@ -84,7 +84,7 @@ packages:
       '@galenjs/factories': 1.0.0
       '@galenjs/logger': 1.0.7
       '@galenjs/models': 1.0.8_mysql2@2.3.2
-      '@galenjs/models-rest': 1.0.8
+      '@galenjs/models-rest': 1.0.11
       '@galenjs/redis': 1.0.0_lodash@4.17.21
       koa: 2.13.4
       koa-compose: 4.1.0
@@ -108,10 +108,11 @@ packages:
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
     dev: false
 
-  /@galenjs/models-rest/1.0.8:
-    resolution: {integrity: sha512-87pl1NomYh3pS0AIqKq7p8ZO9j8w00ibPjZ0bpw8VLrDbz9T+OPjqRdJLnBh/SQQ3+Nryex00JBdIXTb7TxCQQ==}
+  /@galenjs/models-rest/1.0.11:
+    resolution: {integrity: sha512-N1KeJRaTEylCyk0+EZyCfzTPxm5UHfxldbeF8l2Lx1QnT8rHkEK5c/Ar4k5vLR1gchnmLf1Dhgt0muU82KIAnA==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
+      date-fns: 2.25.0
       jsonschema: 1.4.0
       koa-router: 10.1.1
       lodash: 4.17.21
@@ -207,14 +208,14 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.3
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
       '@types/responselike': 1.0.0
     dev: false
 
   /@types/formidable/1.2.5:
     resolution: {integrity: sha512-zu3mQJa4hDNubEMViSj937602XdDGzK7Q5pJ5QmLUbNxclbo9tZGt5jtwM352ssZ+pqo5V4H14TBvT/ALqQQcA==}
     dependencies:
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
     dev: false
 
   /@types/http-cache-semantics/4.0.1:
@@ -224,11 +225,7 @@ packages:
   /@types/keyv/3.1.3:
     resolution: {integrity: sha512-FXCJgyyN3ivVgRoml4h94G/p3kY+u/B86La+QptcqJaWtBWtmc6TtkNfS40n9bIvyLteHh7zXOtgbobORKPbDg==}
     dependencies:
-      '@types/node': 16.11.6
-    dev: false
-
-  /@types/node/16.11.6:
-    resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
+      '@types/node': 16.11.7
     dev: false
 
   /@types/node/16.11.7:
@@ -238,7 +235,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
     dev: false
 
   /abbrev/1.1.1:
@@ -249,7 +246,7 @@ packages:
     resolution: {integrity: sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==}
     engines: {node: '>= 0.6'}
     dependencies:
-      mime-types: 2.1.33
+      mime-types: 2.1.34
       negotiator: 0.6.2
     dev: false
 
@@ -352,7 +349,7 @@ packages:
     resolution: {integrity: sha512-IKufZ1o4Ut42YUrZSo8+qnMTrFuKkvyoLXUywKz9GJ5BrhOFGhLdkx9sG4KAnVvbY6kEcSFjLQul+DVmBm2bgA==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      mime-types: 2.1.33
+      mime-types: 2.1.34
       ylru: 1.2.1
     dev: false
 
@@ -573,6 +570,11 @@ packages:
     resolution: {integrity: sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==}
     engines: {node: '>=8'}
     dev: true
+
+  /date-fns/2.25.0:
+    resolution: {integrity: sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==}
+    engines: {node: '>=0.11'}
+    dev: false
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
@@ -1336,16 +1338,16 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /mime-db/1.50.0:
-    resolution: {integrity: sha512-9tMZCDlYHqeERXEHO9f/hKfNXhre5dK2eE/krIvUjZbS2KPcqGDfNShIWS1uW9XOTKQKqK6qbeOci18rbfW77A==}
+  /mime-db/1.51.0:
+    resolution: {integrity: sha512-5y8A56jg7XVQx2mbv1lu49NR4dokRnhZYTtL+KGfaa27uq4pSTXkwQkFJl4pkRMyNFz/EtYDSkiiEHx3F7UN6g==}
     engines: {node: '>= 0.6'}
     dev: false
 
-  /mime-types/2.1.33:
-    resolution: {integrity: sha512-plLElXp7pRDd0bNZHw+nMd52vRYjLwQjygaNg7ddJ2uJtTlmnTCjWuPKxVu6//AdaRuME84SvLW91sIkBqGT0g==}
+  /mime-types/2.1.34:
+    resolution: {integrity: sha512-6cP692WwGIs9XXdOO4++N+7qjqv0rqxxVvJ3VHPh/Sc9mVZcQP+ZGhkKiTvWMQRr2tbHkJP/Yn7Y0npb3ZBs4A==}
     engines: {node: '>= 0.6'}
     dependencies:
-      mime-db: 1.50.0
+      mime-db: 1.51.0
     dev: false
 
   /mimic-response/1.0.1:
@@ -1911,7 +1913,7 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       media-typer: 0.3.0
-      mime-types: 2.1.33
+      mime-types: 2.1.34
     dev: false
 
   /typedarray-to-buffer/3.1.5:

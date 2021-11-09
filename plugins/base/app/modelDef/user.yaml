@@ -39,6 +39,7 @@ remoteMethods:
   register:
     path: '/register'
     method: 'post'
+    secretType: 'client'
     tags:
       - 'user'
     summary: '用户注册'
