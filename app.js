@@ -54,7 +54,7 @@ class Framework extends BaseFramework {
       schedulePath: this.config.schedulePath,
       workspace: process.cwd(),
       plugin: this.config.plugin,
-      logger: this.logger
+      app: this.app
     })
     await super.afterInit()
     this.app.use(compose([

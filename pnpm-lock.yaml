@@ -2,8 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@galenjs/factories': ^1.0.0
-  '@galenjs/framework-next': 1.0.11
-  '@galenjs/schedule': 1.0.0
+  '@galenjs/framework-next': 1.0.12
+  '@galenjs/schedule': 1.0.13
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -19,8 +19,8 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.0.0
-  '@galenjs/framework-next': 1.0.11_693471849f756461a9e6feee1db84abf
-  '@galenjs/schedule': 1.0.0
+  '@galenjs/framework-next': 1.0.12_693471849f756461a9e6feee1db84abf
+  '@galenjs/schedule': 1.0.13
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -34,7 +34,7 @@ dependencies:
   shortid: 2.2.16
 
 devDependencies:
-  nodemon: 2.0.14
+  nodemon: 2.0.15
 
 packages:
 
@@ -74,15 +74,15 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.11_693471849f756461a9e6feee1db84abf:
-    resolution: {integrity: sha512-p16YasgWf/GgtFrvFoYzG1zaD+CY+/l6+BAxOdxe1/3LEiwReLX2146MmuGeJV6tKKD7xcmFoxnmnkijcEfArw==}
+  /@galenjs/framework-next/1.0.12_693471849f756461a9e6feee1db84abf:
+    resolution: {integrity: sha512-Ih4OMCT2tILHK/eHvpKKgdZPry/fTHD/VaYjtDUrYXQIN3PhYy5ZPBMiSMsGOZGz5rhiJdC1g6BWxCsErNdFuA==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/als': 1.0.0
       '@galenjs/class-loader': 1.0.0
       '@galenjs/factories': 1.0.0
-      '@galenjs/logger': 1.0.7
+      '@galenjs/logger': 1.0.12
       '@galenjs/models': 1.0.8_mysql2@2.3.2
       '@galenjs/models-rest': 1.0.11
       '@galenjs/redis': 1.0.0_lodash@4.17.21
@@ -101,8 +101,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/logger/1.0.7:
-    resolution: {integrity: sha512-/Ic75cQqsgBcA02x9APWxG0+CzKl1E7bCxbrnvOx9NGy3rw1MiEBiipb9/7WODj1YfcteNh+KQRBoIQhhitfew==}
+  /@galenjs/logger/1.0.12:
+    resolution: {integrity: sha512-Fpm8QvrczenkEMKduH/G1atFn7M1GsXCXTbRFbm8cs71meR8fnFENGDLVIeoP3jfmo+fpdvRJz/SLB4cqEXfTA==}
     dependencies:
       winston: 3.3.3
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
@@ -151,11 +151,12 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/schedule/1.0.0:
-    resolution: {integrity: sha512-21xa+BckDfjWrD6tNQUYaJZYrVNV8hXaXtw3hJQA5vtdM9sZzbjwbXLDD8ZePOuNZPj37JKODHLDBLQJ5RXXXA==}
+  /@galenjs/schedule/1.0.13:
+    resolution: {integrity: sha512-4awYnUDLV3B2z6UDdeOLvNx3niz+R2Uqgq4QMHYb+pSIVowZUeKVuAT0Y/lYSk8tKP2JBpaddJkFzlTD4lwuMQ==}
     dependencies:
       cron: 1.8.2
       read-dir-filenames: 1.0.6
+      shortid: 2.2.16
     dev: false
 
   /@galenjs/sequelize-query-filter/1.0.0_mysql2@2.3.2:
@@ -563,7 +564,7 @@ packages:
   /cron/1.8.2:
     resolution: {integrity: sha512-Gk2c4y6xKEO8FSAUTklqtfSr7oTq0CiPQeLBG5Fl0qoXpZyMcj1SG59YL+hqq04bu6/IuEA7lMkYDAplQNKkyg==}
     dependencies:
-      moment-timezone: 0.5.33
+      moment-timezone: 0.5.34
     dev: false
 
   /crypto-random-string/2.0.0:
@@ -1369,8 +1370,8 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /moment-timezone/0.5.33:
-    resolution: {integrity: sha512-PTc2vcT8K9J5/9rDEPe5czSIKgLoGsH8UNpA4qZTVw0Vd/Uz19geE9abbIOQKaAQFcnQ3v5YEXrbSc5BpshH+w==}
+  /moment-timezone/0.5.34:
+    resolution: {integrity: sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==}
     dependencies:
       moment: 2.29.1
     dev: false
@@ -1416,8 +1417,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /nodemon/2.0.14:
-    resolution: {integrity: sha512-frcpDx+PviKEQRSYzwhckuO2zoHcBYLHI754RE9z5h1RGtrngerc04mLpQQCPWBkH/2ObrX7We9YiwVSYZpFJQ==}
+  /nodemon/2.0.15:
+    resolution: {integrity: sha512-gdHMNx47Gw7b3kWxJV64NI+Q5nfl0y5DgDbiVtShiwa7Z0IZ07Ll4RLFo6AjrhzMtoEZn5PDE3/c2AbVsiCkpA==}
     engines: {node: '>=8.10.0'}
     hasBin: true
     requiresBuild: true
@@ -1753,7 +1754,7 @@ packages:
       inflection: 1.13.1
       lodash: 4.17.21
       moment: 2.29.1
-      moment-timezone: 0.5.33
+      moment-timezone: 0.5.34
       mysql2: 2.3.2
       retry-as-promised: 3.2.0
       semver: 7.3.5
