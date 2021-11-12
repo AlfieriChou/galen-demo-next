@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@galenjs/factories': ^1.0.0
-  '@galenjs/framework-next': 1.0.12
+  '@galenjs/framework-next': 1.0.14
   '@galenjs/schedule': 1.0.13
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.0.0
-  '@galenjs/framework-next': 1.0.12_693471849f756461a9e6feee1db84abf
+  '@galenjs/framework-next': 1.0.14_693471849f756461a9e6feee1db84abf
   '@galenjs/schedule': 1.0.13
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
@@ -74,15 +74,15 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.12_693471849f756461a9e6feee1db84abf:
-    resolution: {integrity: sha512-Ih4OMCT2tILHK/eHvpKKgdZPry/fTHD/VaYjtDUrYXQIN3PhYy5ZPBMiSMsGOZGz5rhiJdC1g6BWxCsErNdFuA==}
+  /@galenjs/framework-next/1.0.14_693471849f756461a9e6feee1db84abf:
+    resolution: {integrity: sha512-5yIcCZ13vOQyQ2sGZS3yzs432htUvAA2y0O2pfRrEsZsZv6rgyunABgs6Sv0BSSL0tlJVKshQOpdMqKy3x7+YA==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/als': 1.0.0
       '@galenjs/class-loader': 1.0.0
       '@galenjs/factories': 1.0.0
-      '@galenjs/logger': 1.0.12
+      '@galenjs/logger': 1.0.14
       '@galenjs/models': 1.0.8_mysql2@2.3.2
       '@galenjs/models-rest': 1.0.11
       '@galenjs/redis': 1.0.0_lodash@4.17.21
@@ -101,8 +101,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/logger/1.0.12:
-    resolution: {integrity: sha512-Fpm8QvrczenkEMKduH/G1atFn7M1GsXCXTbRFbm8cs71meR8fnFENGDLVIeoP3jfmo+fpdvRJz/SLB4cqEXfTA==}
+  /@galenjs/logger/1.0.14:
+    resolution: {integrity: sha512-j1teXLg31o35DdlYjgBaAXiTWcDi/PxPAIUPm5UVouoAVvhEiBDnwzZyQvb5QCpJUtTSPkUoMjMrzcHwP2cMEg==}
     dependencies:
       winston: 3.3.3
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
