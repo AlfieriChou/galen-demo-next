@@ -56,6 +56,7 @@ class Framework extends BaseFramework {
       plugin: this.config.plugin,
       app: this.app
     })
+    await this.schedule.init(this.app.context)
     await super.afterInit()
     this.app.use(compose([
       koaBody({}),
