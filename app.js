@@ -1,8 +1,8 @@
 const koaBody = require('koa-body')
-const koaLogger = require('koa-logger')
 const bodyParser = require('koa-bodyparser')
 const BaseFramework = require('@galenjs/framework-next')
 const compose = require('koa-compose')
+const path = require('path')
 
 const Schedule = require('@galenjs/schedule')
 
@@ -25,10 +25,9 @@ const config = {
   middlewarePath: 'app/middleware',
   servicePath: 'app/service',
   schedulePath: 'app/schedule',
-  plugin: {
-    mainPath: 'plugins',
-    plugins: ['doc', 'base']
-  },
+  plugins: ['doc', 'base'].reduce(
+    (ret, item) => ([...ret, { path: path.join(process.cwd(), `plugins/${item}`), name: item }]), []
+  ),
   redis: {
     default: {
       host: '127.0.0.1',
@@ -53,7 +52,7 @@ class Framework extends BaseFramework {
     this.schedule = new Schedule({
       schedulePath: this.config.schedulePath,
       workspace: process.cwd(),
-      plugin: this.config.plugin,
+      plugins: this.config.plugins,
       app: this.app
     })
     await this.schedule.init(this.app.context)

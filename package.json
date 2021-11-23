@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@galenjs/factories": "^1.0.0",
-    "@galenjs/framework-next": "1.0.14",
-    "@galenjs/schedule": "1.0.13",
+    "@galenjs/framework-next": "1.0.15",
+    "@galenjs/logger": "1.0.15",
+    "@galenjs/schedule": "1.0.15",
     "@galenjs/swagger": "1.0.0",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",

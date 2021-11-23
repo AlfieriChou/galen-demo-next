@@ -2,8 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@galenjs/factories': ^1.0.0
-  '@galenjs/framework-next': 1.0.14
-  '@galenjs/schedule': 1.0.13
+  '@galenjs/framework-next': 1.0.15
+  '@galenjs/logger': 1.0.15
+  '@galenjs/schedule': 1.0.15
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -19,18 +20,19 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.0.0
-  '@galenjs/framework-next': 1.0.14_693471849f756461a9e6feee1db84abf
-  '@galenjs/schedule': 1.0.13
+  '@galenjs/framework-next': 1.0.15_14c1eb46d471b9457e8bf03389f433c4
+  '@galenjs/logger': 1.0.15
+  '@galenjs/schedule': 1.0.15
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
   expire-store: 1.0.2
-  got: 11.8.2
+  got: 11.8.3
   jsonwebtoken: 8.5.1
   koa: 2.13.4
   koa-body: 4.2.0
   koa-bodyparser: 4.3.0
   koa-logger: 3.2.1
-  mysql2: 2.3.2
+  mysql2: 2.3.3
   shortid: 2.2.16
 
 devDependencies:
@@ -74,16 +76,16 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.0.14_693471849f756461a9e6feee1db84abf:
-    resolution: {integrity: sha512-5yIcCZ13vOQyQ2sGZS3yzs432htUvAA2y0O2pfRrEsZsZv6rgyunABgs6Sv0BSSL0tlJVKshQOpdMqKy3x7+YA==}
+  /@galenjs/framework-next/1.0.15_14c1eb46d471b9457e8bf03389f433c4:
+    resolution: {integrity: sha512-cLInLfZV6LOpqCQR5WDoZSdlScllrrni1iBBx0ac2mOC7jJOMljBKzKH7i4rUsaGSgEHm1RRkWezX+uFb4ciKA==}
     peerDependencies:
       '@galenjs/factories': ^0.7.14
     dependencies:
       '@galenjs/als': 1.0.0
       '@galenjs/class-loader': 1.0.0
       '@galenjs/factories': 1.0.0
-      '@galenjs/logger': 1.0.14
-      '@galenjs/models': 1.0.8_mysql2@2.3.2
+      '@galenjs/logger': 1.0.15
+      '@galenjs/models': 1.0.15_mysql2@2.3.3
       '@galenjs/models-rest': 1.0.11
       '@galenjs/redis': 1.0.0_lodash@4.17.21
       koa: 2.13.4
@@ -101,8 +103,8 @@ packages:
       - tedious
     dev: false
 
-  /@galenjs/logger/1.0.14:
-    resolution: {integrity: sha512-j1teXLg31o35DdlYjgBaAXiTWcDi/PxPAIUPm5UVouoAVvhEiBDnwzZyQvb5QCpJUtTSPkUoMjMrzcHwP2cMEg==}
+  /@galenjs/logger/1.0.15:
+    resolution: {integrity: sha512-iLhzq1ZRl3nVWfiHO5HUQoSS15yZ5sX+YW/KWENZ1qPEB+vDVIug2Tw00nX/gLjWTRQ/tBEXinOSBAFmWrXplA==}
     dependencies:
       winston: 3.3.3
       winston-daily-rotate-file: 4.5.5_winston@3.3.3
@@ -112,7 +114,7 @@ packages:
     resolution: {integrity: sha512-N1KeJRaTEylCyk0+EZyCfzTPxm5UHfxldbeF8l2Lx1QnT8rHkEK5c/Ar4k5vLR1gchnmLf1Dhgt0muU82KIAnA==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
-      date-fns: 2.25.0
+      date-fns: 2.26.0
       jsonschema: 1.4.0
       koa-router: 10.1.1
       lodash: 4.17.21
@@ -120,16 +122,16 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/models/1.0.8_mysql2@2.3.2:
-    resolution: {integrity: sha512-kb76rFLybcKWgF0je3shoBSbl5xaE+F4VwJqgdRJkr8adDIVu2HZeYu5eWWaRLniiAlU+e5wPlP4KTfg1Fv3aQ==}
+  /@galenjs/models/1.0.15_mysql2@2.3.3:
+    resolution: {integrity: sha512-ryxnQKO+zzE6B04GIUKNHoGUQQHukHACa31FxczlxIamGpDTOD00r9QUsQFLV2wKOxXhix6Hxw4yilKS4wU7fg==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
-      '@galenjs/sequelize-query-filter': 1.0.0_mysql2@2.3.2
+      '@galenjs/sequelize-query-filter': 1.0.0_mysql2@2.3.3
       js-yaml: 4.1.0
       jsonschema: 1.4.0
       lodash: 4.17.21
       read-dir-filenames: 1.0.6
-      sequelize: 6.9.0_mysql2@2.3.2
+      sequelize: 6.11.0_mysql2@2.3.3
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -144,26 +146,26 @@ packages:
     resolution: {integrity: sha512-Xe93Rj+ArSatV/Ub6cjFoExt1NNwo/rFfQbioc2eGXsbuz5QcZFCGvgiuSSfrpjHu+EyIl1gtSVEvnWYpDUwgQ==}
     dependencies:
       '@galenjs/factories': 1.0.0_jsonschema@1.4.0+lodash@4.17.21
-      ioredis: 4.28.0
+      ioredis: 4.28.1
       jsonschema: 1.4.0
     transitivePeerDependencies:
       - lodash
       - supports-color
     dev: false
 
-  /@galenjs/schedule/1.0.13:
-    resolution: {integrity: sha512-4awYnUDLV3B2z6UDdeOLvNx3niz+R2Uqgq4QMHYb+pSIVowZUeKVuAT0Y/lYSk8tKP2JBpaddJkFzlTD4lwuMQ==}
+  /@galenjs/schedule/1.0.15:
+    resolution: {integrity: sha512-OaQRJpOCW+wS6Io0fV86k2SDY1t4P7nuoyjtBv1jZurgzz8Od6I2Zl+qGSrGLkiMBBB5QCbcznX4W2wKk8CzPQ==}
     dependencies:
       cron: 1.8.2
       read-dir-filenames: 1.0.6
       shortid: 2.2.16
     dev: false
 
-  /@galenjs/sequelize-query-filter/1.0.0_mysql2@2.3.2:
+  /@galenjs/sequelize-query-filter/1.0.0_mysql2@2.3.3:
     resolution: {integrity: sha512-1qQEshRDcF6OV3QenkrWBR9G5qdMRcZB4QarBZohmQbG2O+7fxwS2mSY5bemErtNXwTzEg52QSmnUAPWGcypWA==}
     dependencies:
       lodash: 4.17.21
-      sequelize: 6.9.0_mysql2@2.3.2
+      sequelize: 6.11.0_mysql2@2.3.3
     transitivePeerDependencies:
       - mariadb
       - mysql2
@@ -209,14 +211,14 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.3
-      '@types/node': 16.11.7
+      '@types/node': 16.11.9
       '@types/responselike': 1.0.0
     dev: false
 
   /@types/formidable/1.2.5:
     resolution: {integrity: sha512-zu3mQJa4hDNubEMViSj937602XdDGzK7Q5pJ5QmLUbNxclbo9tZGt5jtwM352ssZ+pqo5V4H14TBvT/ALqQQcA==}
     dependencies:
-      '@types/node': 16.11.7
+      '@types/node': 16.11.9
     dev: false
 
   /@types/http-cache-semantics/4.0.1:
@@ -226,17 +228,17 @@ packages:
   /@types/keyv/3.1.3:
     resolution: {integrity: sha512-FXCJgyyN3ivVgRoml4h94G/p3kY+u/B86La+QptcqJaWtBWtmc6TtkNfS40n9bIvyLteHh7zXOtgbobORKPbDg==}
     dependencies:
-      '@types/node': 16.11.7
+      '@types/node': 16.11.9
     dev: false
 
-  /@types/node/16.11.7:
-    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
+  /@types/node/16.11.9:
+    resolution: {integrity: sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==}
     dev: false
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.7
+      '@types/node': 16.11.9
     dev: false
 
   /abbrev/1.1.1:
@@ -314,7 +316,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       ansi-align: 3.0.1
-      camelcase: 6.2.0
+      camelcase: 6.2.1
       chalk: 4.1.2
       cli-boxes: 2.2.1
       string-width: 4.2.3
@@ -341,8 +343,8 @@ packages:
     resolution: {integrity: sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=}
     dev: false
 
-  /bytes/3.1.0:
-    resolution: {integrity: sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==}
+  /bytes/3.1.1:
+    resolution: {integrity: sha512-dWe4nWO/ruEOY7HkUJ5gFt1DCFV9zPRoJr8pV0/ASQermOZjtq8jMjOprC0Kd10GLN+l7xaUPvxzJFWtxGu8Fg==}
     engines: {node: '>= 0.8'}
     dev: false
 
@@ -392,8 +394,8 @@ packages:
       get-intrinsic: 1.1.1
     dev: false
 
-  /camelcase/6.2.0:
-    resolution: {integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==}
+  /camelcase/6.2.1:
+    resolution: {integrity: sha512-tVI4q5jjFV5CavAU8DXfza/TJcZutVKo/5Foskmsqcm0MsL91moHvwiGNnqaa2o6PF/7yT5ikDRcVcl8Rj6LCA==}
     engines: {node: '>=10'}
     dev: true
 
@@ -453,7 +455,7 @@ packages:
     dependencies:
       inflation: 2.0.0
       qs: 6.10.1
-      raw-body: 2.4.1
+      raw-body: 2.4.2
       type-is: 1.6.18
     dev: false
 
@@ -462,7 +464,7 @@ packages:
     dependencies:
       inflation: 2.0.0
       qs: 6.10.1
-      raw-body: 2.4.1
+      raw-body: 2.4.2
       type-is: 1.6.18
     dev: false
 
@@ -572,8 +574,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /date-fns/2.25.0:
-    resolution: {integrity: sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==}
+  /date-fns/2.26.0:
+    resolution: {integrity: sha512-VQI812dRi3cusdY/fhoBKvc6l2W8BPWU1FNVnFH9Nttjx4AFBRzfSVb/Eyc7jBT6e9sg1XtAGsYpBQ6c/jygbg==}
     engines: {node: '>=0.11'}
     dev: false
 
@@ -799,8 +801,8 @@ packages:
       ini: 2.0.0
     dev: true
 
-  /got/11.8.2:
-    resolution: {integrity: sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==}
+  /got/11.8.3:
+    resolution: {integrity: sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==}
     engines: {node: '>=10.19.0'}
     dependencies:
       '@sindresorhus/is': 4.2.0
@@ -875,32 +877,21 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       deep-equal: 1.0.1
-      http-errors: 1.8.0
+      http-errors: 1.8.1
     dev: false
 
   /http-cache-semantics/4.1.0:
     resolution: {integrity: sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==}
 
-  /http-errors/1.7.3:
-    resolution: {integrity: sha512-ZTTX0MWrsQ2ZAhA1cejAwDLycFsd7I7nVtnkT3Ol0aqodaKW+0CTZDQ1uBv5whptCnc8e8HeRRJxRs0kmm/Qfw==}
-    engines: {node: '>= 0.6'}
-    dependencies:
-      depd: 1.1.2
-      inherits: 2.0.4
-      setprototypeof: 1.1.1
-      statuses: 1.5.0
-      toidentifier: 1.0.0
-    dev: false
-
-  /http-errors/1.8.0:
-    resolution: {integrity: sha512-4I8r0C5JDhT5VkvI47QktDW75rNlGVsUf/8hzjCC/wkWI/jdTRmBb9aI7erSG82r1bjKY3F6k28WnsVxB1C73A==}
+  /http-errors/1.8.1:
+    resolution: {integrity: sha512-Kpk9Sm7NmI+RHhnj6OIWDI1d6fIoFAtFt9RLaTMRlg/8w49juAStsrBgp0Dp4OdxdVbRIeKhtCUvoi/RuAhO4g==}
     engines: {node: '>= 0.6'}
     dependencies:
       depd: 1.1.2
       inherits: 2.0.4
       setprototypeof: 1.2.0
       statuses: 1.5.0
-      toidentifier: 1.0.0
+      toidentifier: 1.0.1
     dev: false
 
   /http2-wrapper/1.0.3:
@@ -966,8 +957,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /ioredis/4.28.0:
-    resolution: {integrity: sha512-I+zkeeWp3XFgPT2CtJKxvaF5FjGBGt4yGYljRjQecdQKteThuAsKqffeF1lgHVlYnuNeozRbPOCDNZ7tDWPeig==}
+  /ioredis/4.28.1:
+    resolution: {integrity: sha512-7gcrUJEcPHWy+eEyq6wIZpXtfHt8crhbc5+z0sqrnHUkwBblXinygfamj+/jx83Qo+2LW3q87Nj2VsuH6BF2BA==}
     engines: {node: '>=6'}
     dependencies:
       cluster-key-slot: 1.1.0
@@ -1181,7 +1172,7 @@ packages:
     resolution: {integrity: sha512-MjlznhLLKy9+kG8nAXKJLM0/ClsQp/Or2vI3a5rbSQmgl8IJBQO0KI5FA70BvW+hqjtxjp49SpH2E7okS6NmHg==}
     engines: {node: '>= 7.6.0'}
     dependencies:
-      bytes: 3.1.0
+      bytes: 3.1.1
       chalk: 2.4.2
       humanize-number: 0.0.2
       passthrough-counter: 1.0.0
@@ -1192,7 +1183,7 @@ packages:
     engines: {node: '>= 8.0.0'}
     dependencies:
       debug: 4.3.2
-      http-errors: 1.8.0
+      http-errors: 1.8.1
       koa-compose: 4.1.0
       methods: 1.1.2
       path-to-regexp: 6.2.0
@@ -1217,7 +1208,7 @@ packages:
       escape-html: 1.0.3
       fresh: 0.5.2
       http-assert: 1.5.0
-      http-errors: 1.8.0
+      http-errors: 1.8.1
       is-generator-function: 1.0.10
       koa-compose: 4.1.0
       koa-convert: 2.0.0
@@ -1387,8 +1378,8 @@ packages:
   /ms/2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  /mysql2/2.3.2:
-    resolution: {integrity: sha512-JUSA50rt/nSew8aq8xe3pRk5Q4y/M5QdSJn7Ey3ndOlPp2KXuialQ0sS35DNhPT5Z5PnOiIwSSQvKkl1WorqRA==}
+  /mysql2/2.3.3:
+    resolution: {integrity: sha512-wxJUev6LgMSgACDkb/InIFxDprRa6T95+VEoR+xPvtngtccNH2dGjEB/fVZ8yg1gWv1510c9CvXuJHi5zUm0ZA==}
     engines: {node: '>= 8.0'}
     dependencies:
       denque: 2.0.1
@@ -1526,6 +1517,10 @@ packages:
     resolution: {integrity: sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==}
     dev: false
 
+  /pg-connection-string/2.5.0:
+    resolution: {integrity: sha512-r5o/V/ORTA6TmUnyWZR9nCj1klXCO2CEKNRlVuJptZe85QuhFayC7WeMic7ndayT5IRIR0S0xFxFi2ousartlQ==}
+    dev: false
+
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
     engines: {node: '>=8.6'}
@@ -1573,12 +1568,12 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /raw-body/2.4.1:
-    resolution: {integrity: sha512-9WmIKF6mkvA0SLmA2Knm9+qj89e+j1zqgyn8aXGd7+nAduPoqgI9lO57SAZNn/Byzo5P7JhXTyg9PzaJbH73bA==}
+  /raw-body/2.4.2:
+    resolution: {integrity: sha512-RPMAFUJP19WIet/99ngh6Iv8fzAbqum4Li7AD6DtGaW2RpMB/11xDoalPiJMTbu6I3hkbMVkATvZrqb9EEqeeQ==}
     engines: {node: '>= 0.8'}
     dependencies:
-      bytes: 3.1.0
-      http-errors: 1.7.3
+      bytes: 3.1.1
+      http-errors: 1.8.1
       iconv-lite: 0.4.24
       unpipe: 1.0.0
     dev: false
@@ -1725,8 +1720,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /sequelize/6.9.0_mysql2@2.3.2:
-    resolution: {integrity: sha512-tFROh9T9GgyY6aTV2+aGdfVNvrppuTOo1EFln9AtV8wXJTOOr7Nan7pZum5oLy87CGWl0YeHzAwg99tz04OqNA==}
+  /sequelize/6.11.0_mysql2@2.3.3:
+    resolution: {integrity: sha512-+j3N5lr+FR1eicMRGR3bRsGOl9HMY0UGb2PyB2i1yZ64XBgsz3xejMH0UD45LcUitj40soDGIa9CyvZG0dfzKg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       mariadb: '*'
@@ -1755,7 +1750,8 @@ packages:
       lodash: 4.17.21
       moment: 2.29.1
       moment-timezone: 0.5.34
-      mysql2: 2.3.2
+      mysql2: 2.3.3
+      pg-connection-string: 2.5.0
       retry-as-promised: 3.2.0
       semver: 7.3.5
       sequelize-pool: 6.1.0
@@ -1765,10 +1761,6 @@ packages:
       wkx: 0.5.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /setprototypeof/1.1.1:
-    resolution: {integrity: sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==}
     dev: false
 
   /setprototypeof/1.2.0:
@@ -1789,8 +1781,8 @@ packages:
       object-inspect: 1.11.0
     dev: false
 
-  /signal-exit/3.0.5:
-    resolution: {integrity: sha512-KWcOiKeQj6ZyXx7zq4YxSMgHRlod4czeBQZrPb8OKcohcqAXShm7E20kEMle9WBt26hFcAf0qLOcp5zmY7kOqQ==}
+  /signal-exit/3.0.6:
+    resolution: {integrity: sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==}
     dev: true
 
   /simple-swizzle/0.2.2:
@@ -1879,8 +1871,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /toidentifier/1.0.0:
-    resolution: {integrity: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==}
+  /toidentifier/1.0.1:
+    resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
     dev: false
 
@@ -2031,7 +2023,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.11.7
+      '@types/node': 16.11.9
     dev: false
 
   /wrap-ansi/7.0.0:
@@ -2051,7 +2043,7 @@ packages:
     dependencies:
       imurmurhash: 0.1.4
       is-typedarray: 1.0.0
-      signal-exit: 3.0.5
+      signal-exit: 3.0.6
       typedarray-to-buffer: 3.1.5
     dev: true
 
