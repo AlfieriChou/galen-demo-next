@@ -51,8 +51,6 @@ class Framework extends BaseFramework {
   async afterInit() {
     this.schedule = new Schedule({
       schedulePath: this.config.schedulePath,
-      workspace: process.cwd(),
-      plugins: this.config.plugins,
       app: this.app
     })
     await this.schedule.init(this.app.context)

@@ -4,7 +4,7 @@ specifiers:
   '@galenjs/factories': ^1.0.0
   '@galenjs/framework-next': 1.0.15
   '@galenjs/logger': 1.0.15
-  '@galenjs/schedule': 1.0.15
+  '@galenjs/schedule': 1.0.16
   '@galenjs/swagger': 1.0.0
   bcryptjs: ^2.4.3
   expire-store: ^1.0.2
@@ -22,7 +22,7 @@ dependencies:
   '@galenjs/factories': 1.0.0
   '@galenjs/framework-next': 1.0.15_14c1eb46d471b9457e8bf03389f433c4
   '@galenjs/logger': 1.0.15
-  '@galenjs/schedule': 1.0.15
+  '@galenjs/schedule': 1.0.16
   '@galenjs/swagger': 1.0.0
   bcryptjs: 2.4.3
   expire-store: 1.0.2
@@ -153,8 +153,8 @@ packages:
       - supports-color
     dev: false
 
-  /@galenjs/schedule/1.0.15:
-    resolution: {integrity: sha512-OaQRJpOCW+wS6Io0fV86k2SDY1t4P7nuoyjtBv1jZurgzz8Od6I2Zl+qGSrGLkiMBBB5QCbcznX4W2wKk8CzPQ==}
+  /@galenjs/schedule/1.0.16:
+    resolution: {integrity: sha512-ktbCceTg8eso02+gjCHUSZKIjI/sE7weAIzlQRGhyRQTxoIz/E3k8gbpWkk2xBFZZLhvpY9zVInCJ0A3Nb2HFA==}
     dependencies:
       cron: 1.8.2
       read-dir-filenames: 1.0.6
@@ -211,14 +211,14 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.3
-      '@types/node': 16.11.9
+      '@types/node': 16.11.10
       '@types/responselike': 1.0.0
     dev: false
 
   /@types/formidable/1.2.5:
     resolution: {integrity: sha512-zu3mQJa4hDNubEMViSj937602XdDGzK7Q5pJ5QmLUbNxclbo9tZGt5jtwM352ssZ+pqo5V4H14TBvT/ALqQQcA==}
     dependencies:
-      '@types/node': 16.11.9
+      '@types/node': 16.11.10
     dev: false
 
   /@types/http-cache-semantics/4.0.1:
@@ -228,17 +228,17 @@ packages:
   /@types/keyv/3.1.3:
     resolution: {integrity: sha512-FXCJgyyN3ivVgRoml4h94G/p3kY+u/B86La+QptcqJaWtBWtmc6TtkNfS40n9bIvyLteHh7zXOtgbobORKPbDg==}
     dependencies:
-      '@types/node': 16.11.9
+      '@types/node': 16.11.10
     dev: false
 
-  /@types/node/16.11.9:
-    resolution: {integrity: sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==}
+  /@types/node/16.11.10:
+    resolution: {integrity: sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==}
     dev: false
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.9
+      '@types/node': 16.11.10
     dev: false
 
   /abbrev/1.1.1:
@@ -2023,7 +2023,7 @@ packages:
   /wkx/0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 16.11.9
+      '@types/node': 16.11.10
     dev: false
 
   /wrap-ansi/7.0.0:
