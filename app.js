@@ -1,31 +1,31 @@
-const koaBody = require("koa-body");
-const bodyParser = require("koa-bodyparser");
-const BaseFramework = require("@galenjs/framework-next");
-const compose = require("koa-compose");
-const path = require("path");
+const koaBody = require('koa-body');
+const bodyParser = require('koa-bodyparser');
+const BaseFramework = require('@galenjs/framework-next');
+const compose = require('koa-compose');
+const path = require('path');
 
-const Schedule = require("@galenjs/schedule");
+const Schedule = require('@galenjs/schedule');
 
 const config = {
   models: {
     main: {
-      dataSource: "sequelize",
+      dataSource: 'sequelize',
       options: {
-        host: "127.0.0.1",
-        user: "root",
-        password: "alfieri",
-        database: "test",
+        host: '127.0.0.1',
+        user: 'root',
+        password: 'alfieri',
+        database: 'test',
       },
     },
     virtual: {
-      dataSource: "virtual",
+      dataSource: 'virtual',
       options: {},
     },
   },
-  middlewarePath: "app/middleware",
-  servicePath: "app/service",
-  schedulePath: "app/schedule",
-  plugins: ["doc", "base"].reduce(
+  middlewarePath: 'app/middleware',
+  servicePath: 'app/service',
+  schedulePath: 'app/schedule',
+  plugins: ['doc', 'base'].reduce(
     (
       ret,
       item,
@@ -37,14 +37,14 @@ const config = {
   ),
   redis: {
     default: {
-      host: "127.0.0.1",
+      host: '127.0.0.1',
       port: 6379,
-      password: "",
+      password: '',
       db: 2,
     },
     clients: {
       main: {
-        keyPrefix: "main",
+        keyPrefix: 'main',
       },
     },
   },
@@ -67,13 +67,13 @@ class Framework extends BaseFramework {
       bodyParser(),
     ]));
     this.loadMiddleware([
-      "requestId",
-      "requestLog",
-      "errorHandler",
-      "cors",
-      "jwtVerify",
-      "auth",
-      "router",
+      'requestId',
+      'requestLog',
+      'errorHandler',
+      'cors',
+      'jwtVerify',
+      'auth',
+      'router',
     ]);
   }
 

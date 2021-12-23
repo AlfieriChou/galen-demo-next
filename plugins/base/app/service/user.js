@@ -1,14 +1,14 @@
-const ExpireStore = require("expire-store");
+const ExpireStore = require('expire-store');
 
 class User {
   async cacheGetUserByPhone(phone, ctx) {
     let user = User.phoneStore.get(phone);
-    if (typeof user === "undefined") {
+    if (typeof user === 'undefined') {
       const userRet = await ctx.models.User.findOne({
         where: { phone },
         include: [{
           model: ctx.models.Role,
-          as: "roles",
+          as: 'roles',
         }],
       });
       user = userRet.toJSON();

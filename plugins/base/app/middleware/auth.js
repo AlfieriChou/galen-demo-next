@@ -1,9 +1,9 @@
-const { camelJsonKeys } = require("@galenjs/factories/lodash");
+const { camelJsonKeys } = require('@galenjs/factories/lodash');
 
 module.exports = () =>
   async (ctx, next) => {
     if (!ctx.user) {
-      ctx.roles = ["$unauthenticated"];
+      ctx.roles = ['$unauthenticated'];
       return next();
     }
     const { phone } = ctx.user;
@@ -13,8 +13,8 @@ module.exports = () =>
       { code },
     ) => code);
     ctx.roles = (ctx.user.stateUserRoles || []).concat(
-      "$everyone",
-      "$authenticated",
+      '$everyone',
+      '$authenticated',
     );
     return next();
   };

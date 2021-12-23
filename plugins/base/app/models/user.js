@@ -1,4 +1,4 @@
-const shortId = require("shortid");
+const shortId = require('shortid');
 
 module.exports = Model => {
   return class extends Model {
@@ -6,7 +6,7 @@ module.exports = Model => {
       const { request: { body: { phone, password } } } = ctx;
       const user = await this.findOne({ where: { phone } });
       if (user) {
-        ctx.throw(400, "user is registered");
+        ctx.throw(400, 'user is registered');
       }
       const data = await this.create({
         phone,
@@ -19,15 +19,15 @@ module.exports = Model => {
       const { request: { body: { phone, password } } } = ctx;
       const user = await this.findOne({ where: { phone } });
       if (!user) {
-        ctx.throw(400, "user not registered");
+        ctx.throw(400, 'user not registered');
       }
       if (!ctx.service.bcrypt.verifyPassword(user.password, password)) {
-        ctx.throw(400, "password error");
+        ctx.throw(400, 'password error');
       }
       const token = await ctx.service.jwt.createToken({ phone });
       const sessionId = shortId.generate();
       await ctx.redis.set(
-        "main",
+        'main',
         `loginSessionId:${sessionId}`,
         token,
         23 * 60 * 60,

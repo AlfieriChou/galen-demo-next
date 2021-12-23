@@ -1,20 +1,20 @@
-const ExpireStore = require("expire-store");
-const buildSwaggerDocs = require("@galenjs/swagger");
+const ExpireStore = require('expire-store');
+const buildSwaggerDocs = require('@galenjs/swagger');
 
 const docStore = new ExpireStore(60000);
 
 const openApiInfo = {
-  title: "galenJs API document",
-  version: "v3",
-  description: "openApi 3.0 document",
+  title: 'galenJs API document',
+  version: 'v3',
+  description: 'openApi 3.0 document',
   contact: {
-    name: "AlfieriChou",
-    email: "alfierichou@gmail.com",
-    url: "https://github.com/AlfieriChou/galen/tree/master/packages/swagger",
+    name: 'AlfieriChou',
+    email: 'alfierichou@gmail.com',
+    url: 'https://github.com/AlfieriChou/galen/tree/master/packages/swagger',
   },
   license: {
-    name: "MIT",
-    url: "https://github.com/AlfieriChou/galen/blob/master/LICENSE",
+    name: 'MIT',
+    url: 'https://github.com/AlfieriChou/galen/blob/master/LICENSE',
   },
 };
 
@@ -28,22 +28,22 @@ module.exports = Model => {
           remoteMethods: ctx.remoteMethods,
         });
       }
-      let doc = docStore.get("openApi");
-      if (typeof doc === "undefined") {
+      let doc = docStore.get('openApi');
+      if (typeof doc === 'undefined') {
         doc = await buildSwaggerDocs(openApiInfo, {
           schemas: ctx.jsonSchemas,
           remoteMethods: ctx.remoteMethods,
         });
-        docStore.set("openApi", doc);
+        docStore.set('openApi', doc);
       }
       return doc;
     }
 
     static async remoteHtmlDoc(ctx) {
       const { isReload } = ctx.query;
-      let originalUrl = "/v2/swagger.json";
+      let originalUrl = '/v2/swagger.json';
       if (isReload) {
-        originalUrl += "?isReload=true";
+        originalUrl += '?isReload=true';
       }
       return `<!-- HTML for public distribution bundle build -->
         <!DOCTYPE html>

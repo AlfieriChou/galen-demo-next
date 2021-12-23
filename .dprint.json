@@ -1,6 +1,7 @@
 {
   "incremental": true,
   "typescript": {
+    "quoteStyle": "preferSingle",
     "locked": true,
     "lineWidth": 80,
     "indentWidth": 2,

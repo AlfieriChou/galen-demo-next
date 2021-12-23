@@ -8,6 +8,6 @@ module.exports = () =>
         code: err.status,
         message: err.message,
       };
-      ctx.app.emit("error", err, ctx);
+      ctx.app.emit('error', err, ctx);
     }
   };
