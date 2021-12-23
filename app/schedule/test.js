@@ -1,7 +1,7 @@
 exports.schedule = {
-  time: '0 * * * * *'
-}
+  time: "0 * * * * *",
+};
 
 exports.task = (ctx) => {
-  ctx.logger.info('Time:', Date.now())
-}
+  ctx.logger.info("Time:", Date.now());
+};

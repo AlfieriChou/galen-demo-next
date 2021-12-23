@@ -6,7 +6,8 @@
   "author": "AlfieriChou <alfierichou@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon --inspect app.js"
+    "dev": "NODE_ENV=development nodemon --inspect app.js",
+    "lint": "dprint fmt"
   },
   "dependencies": {
     "@galenjs/factories": "^1.0.0",
