@@ -24,7 +24,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
     "mysql2": "^2.3.0",
-    "nanoid": "^5.0.7"
+    "nanoid": "^3.3.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
