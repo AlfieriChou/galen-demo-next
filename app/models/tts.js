@@ -1,7 +1,7 @@
 const got = require('got');
 const fs = require('fs');
 const path = require('path');
-const shortId = require('shortid');
+const { nanoid } = require('nanoid');
 
 const options = {
   lan: 'zh',
@@ -22,7 +22,7 @@ module.exports = Model => {
       });
       let filepath = ctx.request.body.filepath;
       if (!filepath) {
-        filepath = path.join(process.cwd(), `tts/${shortId.generate()}.mp3`);
+        filepath = path.join(process.cwd(), `tts/${nanoid(10)}.mp3`);
       }
       fs.writeFileSync(filepath, ret.body, 'binary');
       // TODO: return duration

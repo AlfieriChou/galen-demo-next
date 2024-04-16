@@ -1,4 +1,4 @@
-const shortId = require('shortid');
+const { nanoid } = require('nanoid');
 
 module.exports = Model => {
   return class extends Model {
@@ -25,7 +25,7 @@ module.exports = Model => {
         ctx.throw(400, 'password error');
       }
       const token = await ctx.service.jwt.createToken({ phone });
-      const sessionId = shortId.generate();
+      const sessionId = nanoid();
       await ctx.redis.set(
         'main',
         `loginSessionId:${sessionId}`,

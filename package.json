@@ -17,14 +17,14 @@
     "@galenjs/swagger": "1.0.0",
     "bcryptjs": "^2.4.3",
     "expire-store": "^1.0.2",
-    "got": "^11.8.2",
-    "jsonwebtoken": "^8.5.1",
-    "koa": "^2.13.1",
+    "got": "11",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.3",
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
     "mysql2": "^2.3.0",
-    "shortid": "^2.2.16"
+    "nanoid": "^5.0.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

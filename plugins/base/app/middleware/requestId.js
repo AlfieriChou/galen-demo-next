@@ -1,8 +1,8 @@
-const shortId = require('shortid');
+const { nanoid } = require('nanoid');
 
 module.exports = () =>
   async (ctx, next) => {
-    let requestId = shortId.generate();
+    let requestId = nanoid(10);
     if (ctx.get('X-Request-Id')) {
       requestId = ctx.get('X-Request-Id');
     }
